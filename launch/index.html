@@ -4344,8 +4344,8 @@ class StartMenu extends HTMLElement {
       new StartMenuIcon({
         "icon": base64_icon_help,
         "title": "About",
-        "subtitle": "By x2i",
-        "action": "alert('ShitOS by BuBu Software')" })]);
+        "subtitle": "ShitOS+",
+        "action": "alert('This device is running an improved version of the horrible web-based operating system ShitOS that powers every Shitbook by BuBu.')" })]);
 
 
 
@@ -6212,7 +6212,7 @@ class GetStartedPanes extends HTMLElement {
         res = `<div class="slide s${this.slide}">
                               <div class="left">
                                     <h1>Hey!</h1><br>
-                                    You're using ShitOS by BuBu Software!<br>
+                                    You're using an improved version of the extremely horrible ShitOS (ChromeOS) by BuBu!<br>
                                     Read on to discover what it can do.<br><br>
 
                                     <div class="slidebtn" data-pane="2">Get Started</div>
@@ -6908,7 +6908,7 @@ class App_Cmd extends HTMLElement {
         }
 
         if (str == "about\n") {// About
-          $(this).val($(this).val() + `Created by BuBu Software\n`);
+          $(this).val($(this).val() + `Created by BuBu\n`);
           reset(startText);
           return;
         }
@@ -7428,7 +7428,7 @@ class App_Settings extends HTMLElement {
                               <div><img src="https://i.postimg.cc/SRF6ZBRx/15175744784262.jpg"></div>
                               <div>
                                     <b>BuBu</b><br>
-                                    <a href="javascript:void(0);">BuBu Software</a>
+                                    <a href="javascript:void(0);">BuBu</a>
                               </div>
                         </div>
 
