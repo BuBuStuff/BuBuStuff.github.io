@@ -1,0 +1,98 @@
+:root {
+  --app-margin: 12px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#dock .icon {
+  max-width: 100%;
+  display: block;
+}
+
+
+body {
+  /*background-image: url(https://9to5google.com/wp-content/uploads/sites/4/2017/02/chromeos_newdefaultwall_1-e1487111985183.png);*/
+  margin: 0;
+}
+
+#dock {
+  position: sticky;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: row;
+  user-select: none;
+  background-color: rgba(213, 214, 219, 0.75);
+  backdrop-filter: blur(4px);
+  bottom: -60px;
+  border-radius: 30px 30px 0 0;
+  padding: 8px 8px 7px 8px;
+  z-index: 10;
+  transition: 0.5s;
+}
+
+#info {
+  display: flex;
+  flex-grow: 0;
+  justify-content: flex-end;
+}
+
+#dock .button {
+  background-color: rgba(244, 243, 251, 0.75);
+  padding: 10px 10px;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: default;
+}
+
+#info .button {
+  display: flex;
+  align-items: center;
+}
+
+#info .button:first-child {
+  border-radius: 22px 5px 5px 22px;
+  padding-left: 14px;
+}
+
+#info .button:nth-child(2) {
+  border-radius: 5px 22px 22px 5px;
+  margin-left: 3px;
+  padding-right: 14px;
+}
+
+#openBtn {
+  padding: 9px;
+  border-radius: 22px;
+  display: flex;
+  flex-grow: 0;
+  justify-content: flex-start;
+}
+
+#apps {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#apps #chrome { 
+  margin-right: var(--app-margin);
+}
+
+#apps #settings { 
+  margin-left: var(--app-margin);
+}
+
+#apps img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
+}
