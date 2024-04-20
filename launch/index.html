@@ -6733,7 +6733,7 @@ class App_Msedge extends HTMLElement {
 
                         <div class="search">
                               <img src="${base64_search}">
-                              <input type="text" value="https://bing.com" onfocus="$(this).select()">
+                              <input type="text" value="https://bubustuff.github.io/ShtOs" onfocus="$(this).select()">
                         </div>
 
                         <span class="seperator"></span>
@@ -6747,7 +6747,7 @@ class App_Msedge extends HTMLElement {
                         </div>
                   </w-edge-toolbar>
 
-                  <iframe class="browser" src="https://bing.com"></iframe>
+                  <iframe class="browser" src="https://bubustuff.github.io/ShtOs"></iframe>
             `;
   }
 
@@ -6770,7 +6770,7 @@ class App_Msedge extends HTMLElement {
         "margin-top": `-1em` });
 
 
-      $(`#${this.wid}`).find(".msedge_tabs").append(`<w-edge-tab data-text="Bing" data-icon="${base64_search}"></w-edge-tab>`);
+      $(`#${this.wid}`).find(".msedge_tabs").append(`<w-edge-tab data-text="Meet ShitOS" data-icon="${base64_search}"></w-edge-tab>`);
     }, 1);
   }
 
@@ -6778,7 +6778,7 @@ class App_Msedge extends HTMLElement {
     let _this = this;
 
     $(document).on("click", `#${_this.wid} .home`, function (e) {
-      $(`#${_this.wid} .browser`).attr("src", "https://bing.com");
+      $(`#${_this.wid} .browser`).attr("src", "https://bubustuff.github.io/ShtOs");
     });
 
     $(document).on("click", `#${_this.wid} .refresh`, function (e) {
