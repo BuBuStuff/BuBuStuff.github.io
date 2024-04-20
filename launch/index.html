@@ -3456,7 +3456,7 @@ $(() => {
     new DesktopIcon({
       id: "msedge",
       icon: base64_icon_edge,
-      text: "Microsoft Edge",
+      text: "Microsoft Edge (Better than the ShitOS default browser Chrome)",
       action: `Window.spawnWindow('msedge')` })] }));
 
 
@@ -6224,7 +6224,7 @@ class GetStartedPanes extends HTMLElement {
         res = `<div class="slide s${this.slide}">
                               <div class="left">
                                     <h1>View the official page</h1><br>
-                                    Use Microsoft Edge to search for ShitOS.
+                                    Launch Microsoft Edge to search for ShitOS.
                               </div>
                         </div>`;
         break;}
@@ -6692,7 +6692,7 @@ customElements.define("w-explorer-icon", ExplorerIcon);
 class App_Msedge extends HTMLElement {
   static get app_settings() {
     return {
-      w_title: "Microsoft Edge",
+      w_title: "Microsoft Edge - Meet ShitOS",
       icon: base64_icon_edge,
       icon_tiny: base64_icon_edge_tiny,
       h: $(window).height() / 1.8,
