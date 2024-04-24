@@ -6919,6 +6919,11 @@ class App_Cmd extends HTMLElement {
           window[_this.wid].closeWindow();
           return;
         }
+        
+        if (str == "network") {// Exit
+          alert('ChromeOS (ShitOS) failed to detect the network.');
+          return;
+        }
 
 
         if (str.trim().endsWith(".exe")) {// Run apps
