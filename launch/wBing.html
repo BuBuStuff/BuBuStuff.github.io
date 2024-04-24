@@ -6909,7 +6909,7 @@ class App_Cmd extends HTMLElement {
           return;
         }
 
-        if (str == "about") {// About
+        if (str == "about\n") {// About
           $(this).val($(this).val() + `Windows Virtual Machine running on Chrome Operating System (Labelled here as ShitOS)\n`);
           reset(startText);
           return;
@@ -6920,7 +6920,7 @@ class App_Cmd extends HTMLElement {
           return;
         }
         
-        if (str == "network") {// Exit
+        if (str == "network\n") {// Exit
           alert('ChromeOS (ShitOS) failed to detect the network.');
           return;
         }
