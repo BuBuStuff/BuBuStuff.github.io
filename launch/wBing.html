@@ -6904,13 +6904,13 @@ class App_Cmd extends HTMLElement {
         }
 
         if (str == "help\n") {// About
-          $(this).val($(this).val() + `ABOUT${emsp}Shows information about the website.\nCLS${emsp}Clears the screen.\nEXIT${emsp}Quits the CMD.EXE program (command interpreter).\nHELP${emsp}Provides Help information for Windows commands.\n`);
+          $(this).val($(this).val() + `ABOUT${emsp}Shows information about the device.\nCLS${emsp}Clears the screen.\nEXIT${emsp}Quits the CMD.EXE program (command interpreter).\nHELP${emsp}Provides Help information for Windows commands.\n`);
           reset(startText);
           return;
         }
 
-        if (str == "about\n") {// About
-          $(this).val($(this).val() + `Created by BuBu\n`);
+        if (str == "about") {// About
+          $(this).val($(this).val() + `Windows Virtual Machine running on Chrome Operating System (Labelled here as ShitOS)\n`);
           reset(startText);
           return;
         }
