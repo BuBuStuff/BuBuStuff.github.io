@@ -6921,7 +6921,7 @@ class App_Cmd extends HTMLElement {
         }
         
         if (str == "refresh\n") {// Exit
-          loaction.reload(); //{iframe}.contentDocument.location.reload(true);
+          window.loaction.reload(); //{iframe}.contentDocument.location.reload(true);
           return;
         }
 
