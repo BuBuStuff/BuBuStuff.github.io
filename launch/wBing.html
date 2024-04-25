@@ -3404,20 +3404,8 @@ w-settings[style*="--theme: dark"] .theme-grid [data-theme]:hover {
 
 <body>
   <!-- 
-Copyright Dan Wheeler ©️ 2023
-------------------------------
-This is a work in progress which I may continue to update
-from time to time. The goal is to mimic as much of Windows 11
-as possible (difficult though when it keeps changing lol).
+a custom compiler was used when building this, the code here is just the output
 
-There will be bugs and not everything works... It is what
-it is, also - I will be explaining everything that the clone
-can do in the "Get Started" section at some point but until
-then, see how much functionality you can discover - like dark mode for example!
-
-Finally, feel free to peruse the code, it may not be optimal but it works for me as I use a custom compiler when building it, the code here is just the dumped output.
-
-Enjoy :)
 -->
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -3435,6 +3423,12 @@ $(() => {
 
   $("body").append(window["desktop"] = new Desktop({
     icons: [
+          new DesktopIcon({
+      id: "recyclebin",
+      icon: base64_icon_recyclebin,
+      text: "Recycle Bin",
+      action: `Window.spawnWindow('explorer', { titlebar: 'Recycle Bin', icon: '${base64_icon_recyclebin}', path: 'recyclebin' })` }),
+
     new DesktopIcon({
       id: "mycomputer",
       icon: base64_icon_mycomputer,
@@ -3446,12 +3440,6 @@ $(() => {
       icon: base64_icon_documents,
       text: "Documents",
       action: `Window.spawnWindow('explorer', { titlebar: 'Documents', icon: '${base64_icon_documents}', path: 'documents' })` }),
-
-    new DesktopIcon({
-      id: "recyclebin",
-      icon: base64_icon_recyclebin,
-      text: "Recycle Bin",
-      action: `Window.spawnWindow('explorer', { titlebar: 'Recycle Bin', icon: '${base64_icon_recyclebin}', path: 'recyclebin' })` }),
 
     new DesktopIcon({
       id: "msedge",
