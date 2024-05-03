@@ -6473,7 +6473,7 @@ class ExplorerNavigationBar extends HTMLElement {
   html() {
     let res = [
     new ExplorerNavigationBarItem({ icon: base64_home_small, text: "Home" }),
-    new ExplorerNavigationBarItem({ icon: base64_onedrive, text: "BuBu - ShitDrive", dropdown: true }),
+    new ExplorerNavigationBarItem({ icon: base64_onedrive, text: "Connect to OneDrive", dropdown: true }),
     "<hr>",
     new ExplorerNavigationBarItem({ icon: base64_desktop_small, text: "Desktop" }),
     new ExplorerNavigationBarItem({ icon: base64_downloads_small, text: "Downloads" }),
@@ -6717,7 +6717,7 @@ class App_Msedge extends HTMLElement {
                         <div class="item refresh" data-bs-toggle="tooltip" title="Refresh" onclick="document.getElementsByClassName('browser').contentElement.location.reload();">
                               <img src="${base64_refresh_tiny}">
                         </div>
-                        <div class="item home" data-bs-toggle="tooltip" title="Home" onclick="alert('This feature is unavailable on this version of Windows 11.');">
+                        <div class="item home" data-bs-toggle="tooltip" title="Home" onclick="this.closeWindow(); Window.spawnWindow('msedge');">
                               <img src="${icon_home_tiny}">
                         </div>
 
