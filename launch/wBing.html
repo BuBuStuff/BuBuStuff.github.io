@@ -6711,7 +6711,7 @@ class App_Msedge extends HTMLElement {
                         <div class="item" data-bs-toggle="tooltip" title="Back" onclick="document.getElementsByClassName('browser').contentElement.location.history.back();">
                               <img src="${base64_back}">
                         </div>
-                        <div class="item" data-bs-toggle="tooltip" title="Forward" disabled onclick="alert('An error occured: the table at msedge.tabs.1.browser.content.data.history:this.after does not contain any items');">
+                        <div class="item" data-bs-toggle="tooltip" title="Forward" onclick="alert('An error occured: the table at msedge.tabs.1.browser.content.data.history:this.after does not contain any items');">
                               <img src="${base64_forward}">
                         </div>
                         <div class="item refresh" data-bs-toggle="tooltip" title="Refresh" onclick="document.getElementsByClassName('browser').contentElement.location.reload();">
