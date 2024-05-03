@@ -4141,7 +4141,7 @@ class DesktopIcon extends HTMLElement {
         { text: "Copy as path", icon: cxt_copyaspath },
         { text: "Properties", icon: cxt_properties },
         { text: "---" },
-        { text: "Show more options", icon: base64_showmoreoptions_tiny }] };
+        { text: "Show more options", icon: base64_showmoreoptions_tiny, action: `alert('This feature is still under development.');` }] };
 
 
     }
@@ -6711,13 +6711,13 @@ class App_Msedge extends HTMLElement {
                         <div class="item" data-bs-toggle="tooltip" title="Back" onclick="document.getElementsByClassName('browser').contentElement.location.history.back();">
                               <img src="${base64_back}">
                         </div>
-                        <div class="item" data-bs-toggle="tooltip" title="Forward" disabled>
+                        <div class="item" data-bs-toggle="tooltip" title="Forward" disabled onclick="alert('An error occured: the table at msedge.tabs.1.browser.content.data.history:this.after does not contain any items');">
                               <img src="${base64_forward}">
                         </div>
-                        <div class="item refresh" data-bs-toggle="tooltip" title="Refresh">
+                        <div class="item refresh" data-bs-toggle="tooltip" title="Refresh" onclick="document.getElementsByClassName('browser').contentElement.location.reload();">
                               <img src="${base64_refresh_tiny}">
                         </div>
-                        <div class="item home" data-bs-toggle="tooltip" title="Home">
+                        <div class="item home" data-bs-toggle="tooltip" title="Home" onclick="alert('This feature is unavailable on this version of Windows 11.');">
                               <img src="${icon_home_tiny}">
                         </div>
 
