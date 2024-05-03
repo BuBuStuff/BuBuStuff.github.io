@@ -5,7 +5,7 @@
 <head>
 
   <meta charset='UTF-8'>
-  <title>ShtOS Pro Plus Max 2 Ultra</title>
+  <title>Windows 11 Home VD</title>
 
   <meta name="robots" content="noindex">
 
@@ -17,7 +17,7 @@
 
   <style id="INLINE_PEN_STYLESHEET_ID">
     @import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 :root {
   --first-color: #016240;
   --second-color: #ccc;
@@ -5971,9 +5971,9 @@ class Notification extends HTMLElement {
                   <small>Today</small>
                   <small style="float:right" data-bs-toggle="tooltip" title="Clear">&#x2715</small>
                   <br>
-                  <b>Welcome to your new Shitbook</b>
+                  <b>Welcome to Windows 11 Home for Virtual Desktops</b>
                   <br>
-                  Learn about the features of ShitOS by double-clicking the Microsoft Edge (better than the default Chrome) from the desktop.
+                  It's the same device you know, but with a fresh new look and clean operating system.
             `;
   }
 
@@ -6202,19 +6202,19 @@ class GetStartedPanes extends HTMLElement {
         res = `<div class="slide s${this.slide}">
                               <div class="left">
                                     <h1>Welcome to Windows, <b contentEditable="true">User</b></h1><br>
-                                    You're using an improved version of the extremely horrible ShitOS (ChromeOS) by BuBu!<br>
-                                    Read on to discover what it can do.<br><br>
+                                    You're using a version of Windows 11 Home that's made for users like you whose devices aren't compatible with the regular version but still want to enjoy the features of Windows 11.<br>
+                                    Read on for more information.<br><br>
 
                                     <div class="slidebtn" data-pane="2">Get Started</div>
                               </div>
-                              <div class="img">Image unavailable because Shitbooks use the most outdated processor and graphics card.</div>
+                              <div class="img">Image unavailable: Your device is not compatible with some Windows 11 features.</div>
                         </div>`;
         break;
       case 2:
         res = `<div class="slide s${this.slide}">
                               <div class="left">
-                                    <h1>View the official page</h1><br>
-                                    Launch Microsoft Edge to search for ShitOS.
+                                    <h1></h1><br>
+                                    This feature is still under development, as is the rest of this version of Windows 11. Expect bugs, disfunctionality or crashes.
                               </div>
                         </div>`;
         break;}
@@ -6708,7 +6708,7 @@ class App_Msedge extends HTMLElement {
   html() {
     return `
                   <w-edge-toolbar>
-                        <div class="item" data-bs-toggle="tooltip" title="Back">
+                        <div class="item" data-bs-toggle="tooltip" title="Back" onclick="document.getElementsByClassName('browser').contentElement.location.history.back();">
                               <img src="${base64_back}">
                         </div>
                         <div class="item" data-bs-toggle="tooltip" title="Forward" disabled>
