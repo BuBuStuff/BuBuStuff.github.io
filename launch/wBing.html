@@ -6806,7 +6806,7 @@ class EdgeTab extends HTMLElement {
                         <img src="${this.icon}">
                         ${this.text}
                   </div>
-                  <div class="close_tab"><img src="${base64_closewindow}"></div>
+                  <div class="close_tab" onclick="alert('An error occured: The tab instance at msedge.tabs.1.browserInstance is the only open tab. Closing it will result in msedge.tabs.value to become 0 which does not have a function or action referenced to it.');"><img src="${base64_closewindow}"></div>
             `;
   }
 
