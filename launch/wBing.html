@@ -3472,7 +3472,7 @@ $(window).on("resize", function () {
   docHeight = $(window).height();
 });
 
-$(document).on("keydown", function (e) {
+/*$(document).on("keydown", function (e) {
   if (e.altKey) {
     if (window["theme"] == "dark") {
       window["theme"] = "light";
@@ -3482,6 +3482,7 @@ $(document).on("keydown", function (e) {
     toggleTheme();
   }
 });
+*/
 
 const toggleTheme = () => {
   $(`[style*="--theme"]:not(body)`).each((i, e) => {
