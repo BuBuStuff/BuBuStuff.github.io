@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <title>Ki11 the M1n15t3r</title>
+        <style>
+            body{
+	background-color:#111;
+  color:white;
+  
+}
+#textCanvas{
+  position:relative;
+  width:800px;
+  height:300px;
+  background-color:#000;
+  margin:auto;
+  overflow:hidden;
+}
+
+#textCanvas h3 {
+  position:absolute;
+  font-family: 'Asap', sans-serif;
+  font-weight:700;
+  margin:0;
+  padding:0;
+  width:800px;
+  text-align:center;
+  visibility:hidden;
+  font-size:120px;
+  top:65px;
+}
+
+#heh {
+  position:absolute;
+  font-family: 'Asap', sans-serif;
+  font-weight:700;
+  margin:0;
+  padding:0;
+  width:800px;
+  text-align:center;
+  font-size:78px;
+}
+
+#heheh {
+  position:absolute;
+  font-family: 'Asap', sans-serif;
+  font-weight:700;
+  margin:0;
+  padding:0;
+  top:85px;
+  width:800px;
+  text-align:center;
+  font-size:20px;
+}
+h2 {
+  color:#9af600;
+  margin-left:24px;
+  margin-bottom:0px;
+}
+li {
+  font-family: 'Asap', sans-serif;
+  color:#999;
+  margin-bottom:10px;
+}
+
+a:link, a:visited, a:active{
+  color:#9af600;
+}
+        </style>
+        <style>
+            html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  position: relative;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  cursor: crosshair;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.instruction {
+  position: fixed;
+  bottom: 20px;
+  color: white;
+  /*border-radius: 20px;*/
+  padding: 14px 24px;
+  /*background-color: rgba(51, 51, 51, 0.3);
+  box-shadow: 0 1px 4px 0 rgba(21, 28, 37, 0.08);*/
+}
+        </style>
+    </head>
+    <body onclick="startV();">
+        <script>
+            let cde = 'nope';
+            function redr() {
+                let imgN = getRandomInt(6);
+                window.open('game.html?img=' + imgN + '.jpeg');
+                location.reload();
+            }
+            function startV() {
+                if (cde == 'nope') {
+                   let cde = 'hi';
+                    machineGun('Ready? 3 2 1 Go!');
+                    setTimeout(redr, 5250);
+                }
+            }
+        </script>
+        <link href='https://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+        <h3 id="heh">Ki11 the Pr1m3 M1n15t3r!</h3>
+        <h5 id="heheh">Ki11ing the pr1m3 m1n15t3r has never been easier with this game! Simulate how easy it is to ki11 the pr1m3 m1n15t3r! Censored due to Github restr1ct10n5.</h5>
+        <div id="textCanvas"></div>
+        <canvas></canvas>
+        <div class="instruction" style="text-align: center;">Your objective: Ki11 the Pr1m3 M1n15t3r. Click anywhere to start!</div>
+        <!--<button onclick="alert(getRandomInt(6));">hi</button>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/TextPlugin.min.js"></script>
+        <script>
+            let imgNum = Math.floor(Math.random()*10);
+            
+            function getRandomInt(max) {
+                let passThroughMaxValue = max * 10;
+                let defInt = Math.floor(Math.random() * passThroughMaxValue);
+                let finalInt = parseInt(defInt / 10);
+                return finalInt;
+            }
+        </script>
+        <script></script>
+        <script>
+            var container = $("#textCanvas"),   
+    _sentenceEndExp = /(\.|\?|!)$/g;
+
+function machineGun(text) {
+  var words = text.split(" "),
+      tl = new TimelineMax({delay:1, repeat:2, repeatDelay:1}),
+      wordCount = words.length,
+      time = 0,
+      word, element, duration, isSentenceEnd, i;
+  
+  for(i = 0; i < wordCount; i++){
+    word = words[i];
+    isSentenceEnd = _sentenceEndExp.test(word);
+    element = $("<h3>" + word + "</h3>").appendTo(container);
+    duration = Math.max(1, word.length * 0.08);
+    if (isSentenceEnd) {
+      duration += 0
+    }
+    TweenLite.set(element, {autoAlpha:0, scale:0, z:0.01});
+    tl.to(element, duration, {scale:1.2,  ease:SlowMo.ease.config(0.25, 0.9)}, time)
+		 	.to(element, duration, {autoAlpha:1, ease:SlowMo.ease.config(0.25, 0.9, true)}, time);
+    time += duration - 0.05;
+    if (isSentenceEnd) {
+      time += 0;
+    }
+  }
+}
+
+
+        </script>
+    </body>
+</html>
