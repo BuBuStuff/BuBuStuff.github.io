@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Ki11 the M1n15t3r</title>
+</head>
+
+<body class="" onclick="">
+ 
+      <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ki11 the M1n15t3r</title>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  s<style>
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  position: relative;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  cursor: crosshair;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.instruction {
+  position: fixed;
+  bottom: 5px;
+  color: white;
+  /*border-radius: 20px;*/
+  padding: 14px 24px;
+  /*background-color: rgba(51, 51, 51, 0.3);*/   
+  /*box-shadow: 0 1px 4px 0 rgba(21, 28, 37, 0.08);*/
+}
+
+.button1 {
+  position: fixed;
+  bottom: 0px;
+  left: 10px;
+  color: white;
+  border-radius: 20px;
+  padding: 14px 24px;
+  background-color: rgba(61, 61, 61, 0.3);
+  box-shadow: 0 1px 4px 0 rgba(21, 28, 37, 0.08);
+}
+
+.button2 {
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  color: white;
+  border-radius: 20px;
+  padding: 14px 24px;
+  background-color: rgba(61, 61, 6  1, 0.3);
+  box-shadow: 0 1px 4px 0 rgba(21, 28, 37, 0.08);
+}
+
+.button3 {
+  position: fixed;
+  bottom: 0px;
+  right: 40vw;
+  color: white;
+  border-radius: 20px;
+  padding: 14px 24px;
+  background-color: rgba(61, 61, 6  1, 0.3);
+  box-shadow: 0 1px 4px 0 rgba(21, 28, 37, 0.08);
+}
+</style>
+
+  <script>
+  //window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no" onclick="const beforeUnloadHandler = (event) => {event.preventDefault();}">
+  <canvas></canvas>
+    <img src id="prM">
+<div class="button1" onclick="/*setImg();*/new_game();" style="/*text-align: center !important; */cursor: pointer;">New Game<!-- Note: this <b>will</b> restart the game)--></div>
+    <br>
+
+    <!--<div class="button1"><span href="javascript:void(0);" onclick="if (confirm('Only use this feature if you can\'t shoot as this will restart the game.')) {alert('The JavaScript has been fixed. Click OK to apply the changes.');window.location.reload();} else {return 'cancelled'}">Fix Shooting Code</span></div>-->
+    
+    <!--<div class="button1"><span style="cursor: pointer !important;" href="javascript:void(0);" onclick="if (confirm('Do you want to restart this game or ki11 a different picture of the pr1m3 m1n15t3r (click End Game instead)? (This should also fix any shooting issues faced)')) {/*alert('The JavaScript has been fixed. Click OK to apply the changes.');*/window.stop();window.location.reload();} else {return 'cancelled'}">Restart</span></div>-->
+    
+    <div class="button2"><span style="cursor: pointer !important;" href="javascript:void(0);" style="text-align: right !important; cursor: pointer !important;" onclick="if (confirm('You\'re happy enough ki11ing the pr1m3 m1n15t3r here huh? You can ki11 him in other pictures too! End this game?')) {window.close();} else {return 'cancelled'}">End Game</span></div>
+
+
+<script>
+
+     let imgNum = Math.floor(Math.random()*10);
+            
+            function getRandomInt(max) {
+                let passThroughMaxValue = max * 10;
+                let defInt = Math.floor(Math.random() * passThroughMaxValue);
+                let finalInt = parseInt(defInt / 10);
+                return finalInt;
+            }
+        
+
+//let cde = 'nope';
+            function redr() {
+                let imgN = getRandomInt(6);
+                /*if (imgN == getImg()) {
+                    if (getImg == 1) {
+                            let neM = 2;
+                        } else {
+                        let neM = 1;    
+                    }
+                } else {*/let neM = imgN;//}
+                document.getElementById('prM').src = neM + ".jpeg";
+                //window.open('game.html?img=' + neM + '.jpeg');
+               
+                //location.reload();
+            }
+
+    function redrW() {
+                let imgN = getRandomInt(6);
+                /*if (imgN == getImg()) {
+                    if (getImg == 1) {
+                            let neM = 2;
+                        } else {
+                        let neM = 1;    
+                    }
+                } else {*/let neM = imgN;//}
+                //document.getElementById('prM').src = neM + ".jpeg";
+                location.replace('game.html?img=' + neM + '.jpeg');
+               
+                //location.reload();
+            }
+            /*function startV() {
+                if (cde == 'nope') {
+                   let cde = 'hi';
+                    machineGun('Ready? 3 2 1 Go!');
+                    setTimeout(redr, 5250);
+                }
+            }*/
+
+    function new_game() {
+
+        if (confirm('You\'d like to ki11 a new image of Lee Hsien Loong?\n\nGame Data:\nCurrent Image: ' + getImg() + '\nNext Image: {$img=GetRandomImage()}\nBullet Data: {$canvas=GetBulletData(LeeHsienLoongBlood[0]):Splash(GenerateColorGradient(blood_red)))}')) {
+            if (confirm('Would you like to save your game data (splashes, bullet hit points...)?\n\nBullet Data: {$canvas=GetBulletData(LeeHsienLoongBlood[0]):Splash(GenerateColorGradient(blood_red)))}')) {
+        redr();
+                } else {redrW();}
+
+            }
+        
+    }
+    
+</script>
+      <script>
+            let params = (new URL(document.location)).searchParams;
+            //const params = new URLSearchParams(crtURL);
+            let imgURL = params.get("img");
+          function setImg() {
+              //alert(imgURL);
+            document.getElementById('prM').src = imgURL;
+              }
+          setImg();
+
+          function getImg() {
+
+              return imgURL.split(".jpeg")[0];
+              
+          }
+      </script>
+      <script id="rendered-js" type="module">
+// Inspiration: http://jsfiddle.net/MK73j/4/
+// Making canvas look good: https://www.html5rocks.com/en/tutorials/canvas/hidpi/
+// Animation util lib: https://popmotion.io/popcorn/
+
+import popcorn from "https://jspm.dev/@popmotion/popcorn";
+console.clear();
+
+// canvas set up
+const canvas = document.querySelector("canvas");
+const dpr = window.devicePixelRatio || 1;
+const size = canvas.getBoundingClientRect();
+canvas.height = size.height * dpr;
+canvas.width = size.width * dpr;
+
+const ctx = canvas.getContext("2d");
+ctx.scale(dpr, dpr);
+
+window.addEventListener("resize", function (e) {
+  const canvas = document.querySelector("canvas");
+  const size = canvas.getBoundingClientRect();
+  canvas.height = size.height * dpr;
+  canvas.width = size.width * dpr;
+  ctx.scale(dpr, dpr);
+});
+
+ctx.fillStyle = "black";
+
+// utils
+const getRandomColorSet = () => {
+  const colorRanges = [
+  ["#FF5733", "#C70039"],
+  ["#581845", "#9003CF"],
+  ["#8F1818", "#7B0C0C"],
+  ["#630E0E", "#531515"]];
+
+  return colorRanges[Math.floor(Math.random() * colorRanges.length)];
+};
+
+// paint splat manager
+const Splat = function (options) {
+  const self = this;
+
+  let { x, y, event, colorSet } = options;
+
+  // set co-ordinate of event or set shape
+  if (typeof x === "undefined" || typeof y === "undefined") {
+    if (typeof event === "undefined") throw new Error("Must provide an origin");
+    x = event.clientX;
+    y = event.clientY;
+  }
+
+  // set color gradient
+  if (!colorSet) {
+    colorSet = ["#FF5733", "#C70039"];
+  }
+  self.colorMix = popcorn.mixColor(...colorSet);
+
+  self.particles = Array(72).
+  fill({}).
+  map((_, i) => {
+    const p = {
+      x,
+      y,
+      angle: i * 5,
+      size: 20 + Math.random() * 12.5,
+      life: 800 + Math.random() * 640 };
+
+    p.interpolator = popcorn.interpolate([p.size, 0], [0, 1]);
+    return p;
+  });
+
+  self.start = null;
+  let delta = 0;
+  let last = Date.now();
+
+  self.decay = t => {
+    delta = Date.now() - last;
+    last = Date.now();
+
+    self.particles = self.particles.reduce((result, p, i) => {
+      p.x += Math.cos(p.angle) * 4 + Math.random() * 2 - Math.random() * 2;
+      p.y += Math.sin(p.angle) * 4 + Math.random() * 2 - Math.random() * 2;
+
+      p.life -= delta;
+      p.size -= delta / 50;
+
+      if (p.size <= 0) p.life = 0;
+      if (p.life <= 0) return result;
+      result.push(p);
+      return result;
+    }, []);
+  };
+
+  self.render = () => {
+    self.particles.forEach((p, i) => {
+      if (Math.random() < 0.1) return;
+
+      ctx.fillStyle = `${self.colorMix(p.interpolator(p.size))}`;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2, false);
+      ctx.fill();
+    });
+  };
+
+  self.animate = t => {
+    self.decay();
+    self.render();
+    if (self.particles.length > 0) {
+      window.requestAnimationFrame(self.animate);
+    }
+  };
+
+  self.fire = () => {
+    window.requestAnimationFrame(self.animate);
+  };
+
+  return {
+    fire: function () {
+      self.fire();
+    } };
+
+};
+
+canvas.addEventListener("mousedown", function (e) {
+  const s = new Splat({ event: e, colorSet: getRandomColorSet() });
+  s.fire();
+});
+
+/*
+  const drawDemo = val => {
+  if (val < 1) return;
+  const x = Math.random() * size.width;
+  const y = Math.random() * size.height;
+  const s = new Splat({ x, y, colorSet: getRandomColorSet() });
+  s.fire();
+  setTimeout(() => {
+    drawDemo(val - 1);
+  }, 800);
+};
+*/
+
+drawDemo(4);
+//# sourceURL=pen.js
+    </script>
+
+  
+</body>
+
+</html>
+
+</body>
+
+</html>
