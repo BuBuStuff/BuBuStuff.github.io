@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<style>
+			body {
+				background-image: url('bg.JPEG');
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			@import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Cinzel|Comfortaa|Concert+One|Monoton|Roboto|Satisfy|Ultra|Varela+Round|Yellowtail&display=swap');
+
+			* {
+  				font-family: "Chocolate Classical Sans", sans-serif;
+  				font-weight: 400;
+  				font-style: normal;
+			}
+
+			#time1 {
+				font-size: 8em;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="time1">time</h1>
+		<script>
+			let date = new Date();
+			let timeNow = date.getHours() + ":" + date.getMinutes();
+			document.getElementById('time1').innerHTML = timeNow;
+		</script>
+	</body>
+</html>
