@@ -1,30 +1,83 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 		<style>
 			body {
-				background-image: url('bg.JPEG');
-				background-size: cover;
-				/*background-repeat: no-repeat;*/
+				background-image: url('https://BuBuStuff.github.io/home/bg.JPEG');
+				background-position: 25% 30%;
+  				background-repeat: no-repeat;
+  				background-size: cover;
+				cursor: none;
+				user-select: none;
+				-webkit-user-select: none;
 			}
 			@import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Cinzel|Comfortaa|Concert+One|Monoton|Roboto|Satisfy|Ultra|Varela+Round|Yellowtail&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+			
 
-			* {
-  				font-family: "Chocolate Classical Sans", sans-serif;
+			input, h1, h2, h4, h3, h5, h6  a,  span {
+  				color: #363636;
+  				font-family: "Rubik", sans-serif;
+				font-optical-sizing: auto;
   				font-weight: 400;
-  				font-style: normal;
+  				margin: 0px;
+  				padding: 0px;
+			}
+
+
+			.info {
+				bottom: 8vw;
+  				margin: 40px;
+  				opacity: 1;
+  				/*position: ;*/
+				align-items: left;
 			}
 
 			#time1 {
-				font-size: 8em;
+				font-size: 9em;
+				align-items: flex-end;
+			}
+
+			#date1 {
+				font-size: 4.5em;
+				align-items: flex-end;
+			}
+			#quotebox {
+				font-size: 2em;
+				align-items: right;
+				text-align: right !important;
+				margin-right: 1;
+				float: right;
+				margin-top: 0;
 			}
 		</style>
 	</head>
 	<body>
-		<h1 id="time1">time</h1>
+		<div class="info">
+			<span id="quotebox">quote</span>
+			<h1 id="time1">time</h1>
+			<span id="date1">date</span>
+		</div>
 		<script>
+
+			function c2D(n) {
+				n = String(n);
+				if (n.length == 1)
+					n = '0' + n;
+				return n;
+			}
+
+			var x = setInterval(function(){
 			let date = new Date();
-			let timeNow = date.getHours() + ":" + date.getMinutes();
+			let timeNow = date.getHours() + ":" + c2D(date.getMinutes());
+			var options = { weekday: 'short', month: 'long', day: 'numeric' };
 			document.getElementById('time1').innerHTML = timeNow;
+			document.getElementById('date1').innerHTML = date.toLocaleDateString("en-US", options);
+
+			})
+
+
 		</script>
 			<script>
 	
@@ -42,7 +95,6 @@
 	"Perfection is not attainable, but if we chase perfection we can catch excellence.",
 	"An idea isn't responsible for the people who believe in it.",
 	"I would like to die on Mars. Just not on impact.",
-	"If women ran the world we wouldn't have wars, just intense negotiations every 28 days. [Robin Williams]",
 	"Between two evils, I always pick the one I never tried before.",
 	"If two wrongs don't make a right, try three.",	
 	"Man cannot live by bread alone; he must have peanut butter.",
@@ -59,7 +111,6 @@
 	"Dogs have masters. Cats have staff.",
 	"Knowledge is knowing a tomato is a fruit; wisdom is not putting it in a fruit salad.",
 	"Why do people say 'no offense' right before they're about to offend you?",
-	"By all means, marry. If you get a good wife, you'll become happy; if you get a bad one, you'll become a philosopher.",
 	"I asked God for a bike, but I know God doesn't work that way. So I stole a bike and asked for forgiveness.",
 	"The best way to lie is to tell the truth . . . carefully edited truth.",
 	"Do not argue with an idiot. He will drag you down to his level and beat you with experience.",
@@ -72,7 +123,7 @@
 	"God gave us our relatives; thank God we can choose our friends.",
 	"Children: You spend the first 2 years of their life teaching them to walk and talk. Then you spend the next 16 telling them to sit down and shut-up.",
 	"Nothing sucks more than that moment during an argument when you realize you're wrong.",
-	"By the time a man realizes that his father was right, he has a son who thinks he's wrong.",
+	"People say nothing is impossible, but I do nothing at all.",
 	"We've all heard that a million monkeys banging on a million typewriters will eventually reproduce the entire works of Shakespeare. Now, thanks to the Internet, we know this is not true.",
 	"Women who seek to be equal with men lack ambition.",
 	"When you go into court you are putting your fate into the hands of twelve people who weren't smart enough to get out of jury duty.",
@@ -97,26 +148,28 @@
 	"The great pleasure in life is doing what people say you cannot do.",
 	"If we were on a sinking ship, and there was only one life vest... I would miss you so much.",
 	"All my life I thought air was free, until I bought a bag of chips.",
-	"Long time ago I used to have a life, until someone told me to create a Facebook account.",
+	"Long time ago I used to have a life, until someone told me to create a Facebook account.", 
 	"Never take life seriously. Nobody gets out alive anyway.",
-	"When I die, I want to go peacefully like my grandfather did–in his sleep. Not yelling and screaming like the passengers in his car.",
-	"How do you get a sweet little 80-year-old lady to say the F word? Get another sweet little 80-year-old lady to yell 'BINGO!'",
-	"If opportunity doesn’t knock, build a door.",
+	"When I die, I want to go peacefully like my grandfather did-in his sleep. Not yelling and screaming like the passengers in his car.",
+	/*`How do you get a sweet little 80-year-old lady to say the F word? Get another sweet little 80-year-old lady to yell "BINGO!"`,*/
+	"If opportunity doesn't knock, build a door.",
 	"I dream of a better tomorrow, where chickens can cross the road and not be questioned about their motives.",
 	"At the end of the game, the king and the pawn go back in the same box.",
 	"It is better to live one day as a lion, than a thousand days as a lamb.",
 	"Never, under any circumstances, take a sleeping pill and a laxative on the same night.",
-	"Children: You spend the first 2 years of their life teaching them to walk and talk. Then you spend the next 16 telling them to sit down and shut-up."];
+	"The time when you're happy is also the time when you're afraid your happiness will end."];
 
 	function getRandomItem(arr) {
 		const randomIndex = Math.floor(Math.random() * arr.length);
 		const item = arr[randomIndex];
 		return item;
 	}
-
-	const quote = getRandomItem(quotes);
-
-	alert(quote);
-	</script>
+	chgq();
+	function chgq() {
+		let quote = getRandomItem(quotes);
+		document.getElementById('quotebox').innerHTML = quote;
+	}
+	setInterval(chgq, 20000);
+</script>
 	</body>
 </html>
