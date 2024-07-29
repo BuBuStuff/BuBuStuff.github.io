@@ -72,8 +72,13 @@ let quotes = ["War does not determine who is right - only who is left.",
 		return item;
 	}
 	chgq();
+	function ldch() {
+		document.getElementById('quotebox').innerHTML = "Loading...";
+		setTimeout(chgq, 500);
+	}
+
 	function chgq() {
 		let quote = getRandomItem(quotes);
 		document.getElementById('quotebox').innerHTML = quote;
 	}
-	setInterval(chgq, 20000);
+	setInterval(ldch, 20000);
