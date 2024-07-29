@@ -74,7 +74,7 @@ let quotes = ["War does not determine who is right - only who is left.",
 	ldch();
 	function ldch() {
 		document.getElementById('quotebox').innerHTML = "Loading...";
-		setTimeout(chgq, 500);
+		setTimeout(chgq, 1000);
 	}
 
 	function chgq() {
