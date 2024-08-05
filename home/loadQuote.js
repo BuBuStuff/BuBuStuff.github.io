@@ -64,7 +64,9 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"At the end of the game, the king and the pawn go back in the same box.",
 	"Never, under any circumstances, take a sleeping pill and a laxative on the same night.",
 	"The time when you're happy is also the time when you're afraid your happiness will end.",
-	"Chromebooks: the single worst tech product ever made."];
+	"There are two types of people in this world: smart people and people who like Chromebooks.",
+	"You're either the butcher or the cattle."     
+	];
 
 	function getRandomItem(arr) {
 		const randomIndex = Math.floor(Math.random() * arr.length);
