@@ -65,7 +65,8 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"Never, under any circumstances, take a sleeping pill and a laxative on the same night.",
 	"The time when you're happy is also the time when you're afraid your happiness will end.",
 	"There are two types of people in this world: smart people and people who like Chromebooks.",
-	"You're either the butcher or the cattle."     
+	"You're either the butcher or the cattle.",
+	"Life is like a mountain: you can say you've reached the top only after you've climed back down."
 	];
 
 	function getRandomItem(arr) {
