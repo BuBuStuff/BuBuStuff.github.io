@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- DEV NOTES:
+
+tested with screen resolution 585px x 1266px because it has a 0.5:0.5 ratio to base iphone screens, the best i could do with this shitty thing. roughly 80% down and 80% right when screen is rotated vertical 
+
+loader is 52.5vw left because of the reason mentioned above.
+
+font used: chocolate classical sans. cuz why not? :D
+
+-->
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuBu Airlines In-Flight Entertainment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <style>
+/* SLIDE TO UNLOCK CSS */
+        
+        .slide-to-unlock {
+  position: relative;
+  line-height: 50px;
+  background: #242424;
+  border-radius: 100px;
+  text-align: center;
+  width: 40vw;
+            
+}
+
+.slide-to-unlock .help-text {
+  position: relative;
+  font-size: 14px;
+  background: rgb(255,255,255);
+  background-size: 400% 400%;
+  animation: gradient 2s infinite;
+  color: black;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+.slide-to-unlock .handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  line-height: 50px;
+  background-color: #C83B33;
+  text-align: center;
+  color: white;
+}
+    </style>
+</head>
+<body translate="no" lang="en" class="" onload="">
+    
+         <!--<div class="subheader"></div>-->
+
+<!--HEADER END HEADER END HEADER END-->
+            <div class="goldGradient" style="align-items: right !important;">
+<div class="main_sm">
+        <p class="verylightgray_font" style="margin-right: 5%; font-size: 44px; text-align: right; color: #fff !important;"><i>Welcome Aboard<br><span style="font-size: 20px;">BF123 | 1A</span></i><br><br><span style="font-size: 20px;">Estimated Flight Time</span><br><span id="demo">{FlightTimeLoadingText}</span><br>
+            <!-- Swipe to Continue -->
+        </p>
+    <div class="main_sm">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragdealer/0.9.9/dragdealer.min.js"></script>
+<div class="slide-to-unlock">
+  <span class="help-text">
+    Swipe to start
+  </span>
+  <div class="handle red-bar">
+    >
+  </div>
+        
+    </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+      <script>
+var slideToUnlockEl = $('.slide-to-unlock')[0];
+
+new Dragdealer(slideToUnlockEl, {
+  steps: 2,
+  animationCallback: function (x, y) {
+    if (x === 1) {
+        location.href="main.html";
+    }
+  } });
+    </script>
+
+<!--SECTIONS HERE SECTIONS HERE SECTIONS HERE SECTIONS HERE SECTIONS HERE SECTIONS HERE SECTIONS HERE-->
+        <script>
+            var timeToStop = "23:07"; //Time left to display, format as HH:MM
+//TIME TIME TIME TIME TIME TIME TIME TIME TIME TIME TIME TIME TIME TIME TIME TIME TIME TIME TIME TIME TIME
+
+
+            //document.getElementById("arrTime").innerHTML = timeToStop;
+            
+            var currentDateNow = new Date().toLocaleDateString();
+var countDownDate = new Date(currentDateNow + " " + timeToStop + ":00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+    
+  var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("demo").innerHTML = hours + "h "
+  + minutes + "m";
+    
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "{ERROR FlightTimePastArrivalTime}";
+  }
+}, 1000);
+        </script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- menu script -->
+    
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragdealer/0.9.9/dragdealer.min.js"></script>
+</body>
+</html>

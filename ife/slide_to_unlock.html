@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">  
+<style>
+.slide-to-unlock {
+  position: relative;
+  line-height: 50px;
+  background: #242424;
+  border-radius: 100px;
+  text-align: center;
+  width: 30%
+}
+
+.slide-to-unlock .help-text {
+  position: relative;
+  font-size: 14px;
+  background: rgb(255,255,255);
+  background-size: 400% 400%;
+  color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+.slide-to-unlock .handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  line-height: 50px;
+  background-color: #C83B33;
+  text-align: center;
+  color: white;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 100% 0%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
+</style>
+</head>
+<body translate="no">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dragdealer/0.9.9/dragdealer.min.js"></script>
+<div class="slide-to-unlock">
+  <span class="help-text">
+    Swipe to unlock
+  </span>
+  <div class="handle red-bar">
+    >
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+      <script>
+var slideToUnlockEl = $('.slide-to-unlock')[0];
+
+new Dragdealer(slideToUnlockEl, {
+  steps: 2,
+  animationCallback: function (x, y) {
+    if (x === 1) {
+      alert("🚀");
+    }
+  } });
+    </script>
+</body>
+</html>
