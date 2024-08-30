@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuBu Airlines In-Flight Entertainment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+</head>
+<body translate="no" lang="en" class="brown_bg" onload="">
+     <div class="header gray_bg">
+    <div class="logo">
+      <span>
+        <h3 class="beige_font">BuBu Airlines</h3>
+      </span>
+    </div>
+    <div class="menus text-right">
+      <span class="toggleBtn">
+        <i class="fa fa-bars beige_font"></i>
+      </span>
+      <div class="myMenu hideMenu gray_bg">
+        <ul class="mainUl gray_bg">
+          <li>
+            <a href="index.html" class="beige_font"><!--<i class="fa fa-home"></i>-->Home</a>
+          </li>
+          
+            <!--<a href="#" class="ddMenu"><!--<i class="fas fa-graduation-cap"></i>Entertainment</a>-->
+            <!--<div class="submenu">-->
+              
+                <li><a href="movies.html" class="active beige_font">Movies & TV</a></li>
+                <!--<li><a href="tv.html" class="beige_font">TV Shows</a></li>-->
+                <li><a href="music.html" class="beige_font">Music</a></li>
+              
+            <!--</div>-->
+          
+          <li>
+            <a href="flight.html" class="beige_font"><!--<i class="far fa-copy"></i>-->Flight</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+         <!--<div class="subheader"></div>-->
+  </div>
+
+    <!--HEADER END HEADER END HEADER END-->
+
+
+    <iframe src="movies_page.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;"></iframe>
+    <main>
+        
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- menu script -->
+    <script>
+        $(function(){
+      $('.toggleBtn').on('click', function(){
+      $(this).children('i').toggleClass('hiddenDiv');
+      $('.myMenu').toggleClass('hideMenu');
+    });
+  });
+    </script>
+    <!--<div id="loader">
+        <div id="fade-wrapper"></div>
+    </div>
+<script>
+var loadTimer;
+
+function loadPage() {
+  loadTimer = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+}
+</script>   --> 
+</body>
+</html>

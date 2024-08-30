@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuBu Airlines In-Flight Entertainment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+</head>
+<body class="brown_bg" translate="no" lang="en">
+     <div class="header gray_bg">
+    <div class="logo">
+      <span>
+        <h3 class="beige_font">BuBu Airlines</h3>
+      </span>
+    </div>
+    <div class="menus text-right">
+      <span class="toggleBtn">
+        <i class="fa fa-bars beige_font"></i>
+      </span>
+      <div class="myMenu hideMenu gray_bg">
+        <ul class="mainUl gray_bg">
+          <li>
+            <a href="index.html" class=" beige_font"><!--<i class="fa fa-home"></i>-->Home</a>
+          </li>
+          
+            <!--<a href="#" class="ddMenu"><!--<i class="fas fa-graduation-cap"></i>Entertainment</a>-->
+            <!--<div class="submenu">-->
+              
+                <li><a href="movies.html" class="beige_font">Movies & TV</a></li>
+                <!--<li><a href="tv.html" class="beige_font">TV Shows</a></li>-->
+                <li><a href="music.html" class="beige_font">Music</a></li>
+              
+            <!--</div>-->
+          
+          <li>
+            <a href="flight.html" class="active ddMenu beige_font"><!--<i class="far fa-copy"></i>-->Flight</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+         <!--<div class="subheader"></div>-->
+  </div>
+
+<!--HEADER END HEADER END HEADER END-->
+
+    <main>
+        <!--<p class="gold_font" style="font-size: 30px; text-align: center;">Welcome<br><span style="font-size: 20px;">BuBu Airlines Flight 123</span></p>-->
+<!--SECTIONS HERE SECTIONS HERE SECTIONS HERE SECTIONS HERE SECTIONS HERE SECTIONS HERE SECTIONS HERE-->
+        
+        <section style="" class="page_top_widget flight_widget flight-progress gray_bg gold_font">
+            <h2 style="position: absolute;" class="">
+                <span class="gold_font back_btn" style="">
+                    <i onclick="history.back();" style="cursor: pointer;" class="fa fa-solid fa-arrow-left"></i> <br>Flight
+                </span>
+            
+            </h2>
+            <!---->
+            <br>
+            <br>
+            <br>
+            
+            <p style="text-align: center;">Aircraft: Boeing 747-400 (N661US)</p>
+            <img src="7540047.jpg" style="align-items: center; /*width: 50vw; height: 30vh;*/ display: block; margin-left: auto; margin-right: auto;">
+            <p>
+                <span style="float: left !important; font-size: 10px;">FROM</span>
+                <span style="float: right !important; font-size: 10px;">TO</span>
+                <br>
+                <span style="float: left !important; font-size: 30px;">LAX</span>
+                <span style="position: absolute; left: 48% !important; font-size: 30px;"><i class="fa fa-light fa-plane"></i><!--|-----></span>
+                <span style="float: right !important; font-size: 30px;">JFK</span>
+                <br><br>
+                <span style="float: left !important; font-size: 10px;">Los Angeles</span>
+                <span style="float: right !important; font-size: 10px;">New York</span>
+            </p>
+<!--<span style="float: right !important; font-size: 10px;">TO</span><br><span style="float: right !important; font-size: 30px;">JFK</span><br><span style="float: right !important; font-size: 10px;">New York</span>-->
+            <br>
+            <span style="text-align: center;">
+            <hr class="lightgray_hr">
+            <p>
+                <span style="font-size: 25px; float: left; text-align: center;" id="timeRem">Loading</span>
+                <span style="font-size: 25px; float: right;" id="timeRN">Loading</span>
+                <br>
+                <br>
+                <span style="font-size: 10px; float: left;" id="">Flight Time Remaining</span>
+                <span style="font-size: 10px; float: right;" id="">Time at Destination</span>
+                <br>
+                <br>
+                <span style="font-size: 25px; float: left; text-align: center;" id="demo">14:00</span>
+                <span style="font-size: 25px; float: right;" id="timeCD">Loading</span>
+                <br>
+                <br>
+                <span style="font-size: 10px; float: left;" id="">Time at 2pm</span>
+                <span style="font-size: 10px; float: right;" id="">Time at Current Location</span>
+            </p>
+            </span>
+        </section>
+
+        <script>
+            var timeToStop = "23:07"; //Time left to display, format as HH:MM (today)
+
+        function convert2D(n) {
+            n = String(n)
+            if (n.length == 1)
+                n = '0' + n
+            return n
+        }
+            
+            var currentDateNow = new Date().toLocaleDateString();
+var countDownDate = new Date(currentDateNow + " " + timeToStop + ":00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+    
+  var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("timeRem").innerHTML = hours + "h "
+  + convert2D(minutes) + "m";
+
+
+//var dnad = new Date("October 13, 2014 11:03:00");
+var dnad = new Date();
+    
+    document.getElementById("timeRN").innerHTML = dnad.getHours() + ":" + convert2D(dnad.getMinutes());
+    document.getElementById("timeCD").innerHTML = dnad.getHours() + ":" + convert2D(dnad.getMinutes());
+
+    
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timeRem").innerHTML = "Arrived";
+  }
+}, 1000);
+        </script>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+      $('.toggleBtn').on('click', function(){
+      $(this).children('i').toggleClass('hiddenDiv');
+      $('.myMenu').toggleClass('hideMenu');
+    });
+  });
+    </script>
+</body>
+</html>

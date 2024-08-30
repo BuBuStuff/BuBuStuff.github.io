@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>BuBu Embedded Page</title>
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style>
+/*
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    
+
+body {
+  background: black;
+  color: white;
+}
+
+    */
+
+li {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logoImg {
+  width: 100px;
+  height: 70px;
+  margin-top: -10px;
+}
+header nav li {
+  margin: 0 30px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+header nav li:hover {
+  color: #ccc;
+}
+header .endNav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .endNav i {
+  font-size: 20px;
+  margin: 0 15px;
+}
+
+.mainMovie {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+.mainMovie .mainImg {
+  position: absolute;
+  width: 100%;
+  height: 85vh;
+  background-size: cover;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.title {
+  margin-top: 40px;
+  color: #ccc;
+  padding-left: 40px;
+  text-transform: uppercase;
+}
+/* 
+hr {
+  margin: 5px 30px;
+} */
+
+.movies {
+  width: 100%;
+  margin-top: 10px;
+  padding: 0 30px;
+  display: flex;
+        white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+.movies .movie {
+  width: auto;
+  height: auto;
+  flex-grow: 1;
+    margin: 3px;
+    background-color: #eee;
+    float: none;
+    display: inline-block;
+    zoom: 1;
+}
+</style>
+
+  <script>
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuBu Airlines In-Flight Entertainment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+</head>
+<body translate="no" lang="en" class="brown_bg" onload="">
+         <body>
+  <!--<header>
+    <nav>
+      <li>
+        Home
+      </li>
+      <li>
+        series
+      </li>
+      <li>
+        films
+      </li>
+      <li>
+        Recently Added
+      </li>
+      <li>
+        My list
+      </li>
+    </nav>
+    <div class="endNav">
+    </div>
+  </header>-->
+  <!--<div class="mainMovie">
+  </div>-->
+        <br><br>
+        <h2 class="gold_font" style="position: absolute; left: 7.5vw;">Movies & TV</h2>
+  <br><br>
+        <div class="title">
+    <div class="text">
+        New Releases
+    </div>
+  </div>
+  <hr />
+  <div class="movies">
+    <a href=""><img class="movie" src=""></a><img class="movie" src="" /><img class="movie" src="" /><img class="movie" src="" /><img class="movie" src="" />
+  </div>
+        
+  <div class="title">
+    <div class="text">
+        What to Watch
+    </div>
+  </div>
+  <hr />
+  <div class="movies">
+    <img class="movie" src="" /><img class="movie" src="" /><img class="movie" src="" /><img class="movie" src="" /><img class="movie" src="" />
+  </div>
+        
+  <div class="title">
+    <div class="text">
+      Sci-Fi 
+    </div>
+  </div>
+  <hr />
+  <div class="movies">
+    <a target="_blank" href="https://tv.apple.com/us/movie/the-day-after-tomorrow/umc.cmc.6a4d21rv7s6bqileg9e24tu0s"><img class="movie" src="../Movie/Poster/Day_After_Tomorrow.png"></a><a target="_blank" href="https://tv.apple.com/us/movie/the-maze-runner/umc.cmc.4ljr4z86mfhtbdouv5ml5h693"><img class="movie" src="../Movie/Poster/Maze_Runner.png"></a><a href="https://tv.apple.com/us/movie/maze-runner-the-scorch-trials/umc.cmc.5pyhv0f38ah46y7ui7a7hndyg" target="_blank"><img class="movie" src="../Movie/Poster/Scorch_Trials.png"></a><a href="https://tv.apple.com/us/movie/maze-runner-the-death-cure/umc.cmc.5bj5wdgxzfbr7w44zq16wqutv" target="_blank"><img class="movie" src="../Movie/Poster/Death_Cure.png"></a><a href="https://tv.apple.com/us/movie/tron-legacy/umc.cmc.7c2xmkse0zwi22uyxkm2shm73" target="_blank"><img class="movie" src="../Movie/Poster/Tron.png"></a><a href="https://tv.apple.com/us/movie/inception/umc.cmc.6loas01ow0w4lkatxxloz7a6e" target="_blank"><img class="movie" src="../Movie/Poster/Inception.png"></a>
+  </div>
+        
+  <div class="title">
+    <div class="text">
+      Series
+    </div>
+  </div>
+  <hr />
+  <div class="movies">
+    <img class="movie" src="" /><img class="movie" src="" /><img class="movie" src="" /><img class="movie" src="" /><img class="movie" src="" />
+  </div>
+        
+  <div class="title">
+    <div class="text">
+      Originals
+    </div>
+  </div>
+  <hr />
+  <div class="movies">
+    <img class="movie" src="" /><img class="movie" src="" /><img class="movie" src="" /><img class="movie" src="" /><img class="movie" src="" />
+  </div>
+  <footer>
+      <hr>
+    <div class="mainFoot">
+      <div class="feet">
+        <li class="feet feet1" onclick="alert('what\'s privacy again?\njk here ya go:\nWe don\'t collect, store or distribute your personal or browser information.');">
+            Privacy Policy
+        </li>
+        <li class="feet feet2" onclick="alert('Content displayed directly on this site is in the public domain and not subject to copyright. Any content that links to an external site or service not affiliated with BuBu Airlines is subject to copyright and is displayed by the service provider under a license. You may need a license to view this content.');">
+            Legal Notice and Licensing
+        </li>
+        <li class="feet feet3" onclick="alert('we don\'t use cookies. i promise. because we\'ve got no reason to. :D');">
+          Cookie Preferences
+        </li>
+        <li class="feet feet4" onclick="alert('By using our service \'BuBu Airlines Wireless In-Flight Entertainment\', you agree not to read, process, run outside the origins, store in any form, or distribute the source code and contents of this website.');">
+          Terms of Use
+        </li>
+      </div>
+    </div>
+    <div class="end gold_font">
+      <p>
+        <!-- Content shown here that can displayed from this site is public domain and not subjected to copyright. All content with links to an external site or service not associated with BuBu Airlines is subject to copyright and is displayed with a license.
+      </p> -->Content displayed directly on this site is in the public domain and not subject to copyright. Any content that links to an external site or service is not affiliated with BuBu Airlines and is subject to copyright and is displayed by the service provider under a license. You may need a license to view this content.
+    </div>
+  </footer>
+
+</body>
+  
+  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- menu script -->
+    <script>
+        $(function(){x
+      $('.toggleBtn').on('click', function(){
+      $(this).children('i').toggleClass('hiddenDiv');
+      $('.myMenu').toggleClass('hideMenu');
+    });
+  });
+    </script>
+</body>
+
+</html>
