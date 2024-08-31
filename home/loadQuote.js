@@ -80,7 +80,8 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"The time when you're happy is also the time when you're afraid your happiness will end.",
 	"There are two types of people in this world: smart people and people who like Chromebooks.",
 	"You're either the butcher or the cattle.",
-	"Life is like a mountain: you can say you've reached the top only after you've climed back down."
+	"Life is like a mountain: you can say you've reached the top only after you've climed back down.",
+	"People die when they get killed."
 	];
 
 	function getRandomItem(arr) {
