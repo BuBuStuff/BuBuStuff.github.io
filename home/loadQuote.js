@@ -82,7 +82,8 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"You're either the butcher or the cattle.",
 	"Life is like a mountain: you can say you've reached the top only after you've climed back down.",
 	"People die when they get killed.",
-	"If you put six locks on my door all in a row, when you go out, lock every other one. No matter how long somebody stands there picking the locks, they are always locking three."
+	"If you put six locks on my door all in a row, when you go out, lock every other one. No matter how long somebody stands there picking the locks, they are always locking three.",
+	"If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is."
 	];
 
 	function getRandomItem(arr) {
