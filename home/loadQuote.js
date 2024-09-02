@@ -75,7 +75,8 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"You can't predict the future but you can invent it.",
 	"The scientific theory I like best is that the rings of Saturn are composed entirely of lost airline luggage.",
 	"If not you, who? If not now, when?",
-	"See obstacles as stepping stones."
+	"See obstacles as stepping stones.",
+	"It's better to live a day as a lion than a thousand as a lamb."
 	];
 
 	function getRandomItem(arr) {
