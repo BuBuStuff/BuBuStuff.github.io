@@ -78,7 +78,9 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"See obstacles as stepping stones.",
 	"It's better to live a day as a lion than a thousand as a lamb.",
 	"The next time you’re faced with something that’s unexpected, unwanted and uncertain, consider that it may just be a gift.",
-	"Wherever there is no path, go there and lay one."
+	"Wherever there is no path, go there and lay one.",
+	"A mind is like a parachute. It doesn’t work if it isn’t open.",
+	`<a href="javascript:void(0);" onclick="location.reload();" style="text-decoration: none; color: purple;">I'd save hundreds of hours if I could skip YouTube ads the moment they appear like you can do by clicking me!</a>` 
 	];
 
 	function getRandomItem(arr) {
