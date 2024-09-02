@@ -83,7 +83,9 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"Life is like a mountain: you can say you've reached the top only after you've climed back down.",
 	"People die when they get killed.",
 	"If you put six locks on my door all in a row, when you go out, lock every other one. No matter how long somebody stands there picking the locks, they are always locking three.",
-	"If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is."
+	"If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is.",
+	"First the doctor told me the good news: I was going to have a disease named after me.",
+	"It's never too late to be what you could have been."
 	];
 
 	function getRandomItem(arr) {
