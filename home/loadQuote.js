@@ -77,7 +77,8 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"If not you, who? If not now, when?",
 	"See obstacles as stepping stones.",
 	"It's better to live a day as a lion than a thousand as a lamb.",
-	"The next time you’re faced with something that’s unexpected, unwanted and uncertain, consider that it may just be a gift."
+	"The next time you’re faced with something that’s unexpected, unwanted and uncertain, consider that it may just be a gift.",
+	"Wherever there is no path, go there and lay one."
 	];
 
 	function getRandomItem(arr) {
