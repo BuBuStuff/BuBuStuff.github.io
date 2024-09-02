@@ -81,7 +81,14 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"Wherever there is no path, go there and lay one.",
 	"A mind is like a parachute. It doesn’t work if it isn’t open.",
 	`<a href="javascript:void(0);" onclick="location.reload();" style="text-decoration: none; color: purple;">I'd save hundreds of hours if I could skip YouTube ads the moment they appear like you can do by clicking me!</a>`,
-	"Logic will get you from A to B. Imagination will take you everywhere."
+	"Logic will get you from A to B. Imagination will take you everywhere.",
+	"If you have built castles in the air, your work need not be lost; that is where they should be. Now put the foundations under them.",
+	"Everything in moderation, including moderation.",
+	"Evening news is where they begin with \"Good evening,\" and then proceed to tell you why it isn't.",
+	"I read recipes the same way I read science fiction. I get to the end and I think, \"Well, that’s not going to happen.\"",
+	"In any situation, the best thing you can do is the right thing; the next best thing you can do is the wrong thing; the worst thing you can do is nothing.",
+	"The power of the people is much stronger than the people in power."
+	
 	];
 
 	function getRandomItem(arr) {
