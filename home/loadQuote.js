@@ -73,7 +73,8 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"First the doctor told me the good news: I was going to have a disease named after me.",
 	"It's never too late to be what you could have been.",
 	"You can't predict the future but you can invent it.",
-	"The scientific theory I like best is that the rings of Saturn are composed entirely of lost airline luggage."
+	"The scientific theory I like best is that the rings of Saturn are composed entirely of lost airline luggage.",
+	"If not you, who? If not now, when?"
 	];
 
 	function getRandomItem(arr) {
