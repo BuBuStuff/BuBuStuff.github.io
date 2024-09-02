@@ -81,7 +81,8 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"There are two types of people in this world: smart people and people who like Chromebooks.",
 	"You're either the butcher or the cattle.",
 	"Life is like a mountain: you can say you've reached the top only after you've climed back down.",
-	"People die when they get killed."
+	"People die when they get killed.",
+	"If you put six locks on my door all in a row, when you go out, lock every other one. No matter how long somebody stands there picking the locks, they are always locking three."
 	];
 
 	function getRandomItem(arr) {
