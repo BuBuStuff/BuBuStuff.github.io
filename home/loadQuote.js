@@ -87,8 +87,16 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"Evening news is where they begin with \"Good evening,\" and then proceed to tell you why it isn't.",
 	"I read recipes the same way I read science fiction. I get to the end and I think, \"Well, that’s not going to happen.\"",
 	"In any situation, the best thing you can do is the right thing; the next best thing you can do is the wrong thing; the worst thing you can do is nothing.",
-	"The power of the people is much stronger than the people in power."
-	
+	"The power of the people is much stronger than the people in power.",
+	"Finding a million ways that won't work isn't failing.",
+	"If you can't your brakes, make your horn louder.",
+	"The shinbone is a device for finding furniture in a dark room.",
+	"Holding on to anger is like grasping a hot coal with the intent of throwing it at someone else; you are the one who gets burned.",
+	"I have to exercise early in the morning before my brain figures out what I’m doing.",
+	"Count that day lost whose low descending sun. Views from thy hand no worthy action done.",
+	"Double your pleasure, double your fun with . . . Doublemint, Doublemint, Doublemint gum.",
+	"Worrying works! 90% of the things I worry about never happen.",
+	"Keep the dream alive; hit the snooze button!"
 	];
 
 	function getRandomItem(arr) {
