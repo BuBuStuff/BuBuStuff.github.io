@@ -89,7 +89,7 @@
 function openFullscreen() {				
 	const urlParams = new URLSearchParams(window.location.search);
 	const fsParam = urlParams.get('fsAvailable');
-	if (fsParam.value == "true") {
+	if (fsParam.value === "true") {
 	var elem = document.documentElement;
   		if (elem.requestFullscreen) {
  		   elem.requestFullscreen();
