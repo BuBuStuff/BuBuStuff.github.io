@@ -99,7 +99,7 @@ function openFullscreen() {
 		    elem.msRequestFullscreen();
 		  }
 	} else {
-		console.warn("User attempted to activate fullscreen mode while URL Search Parameter \"fsAvailable\" was either set to false or not defined.\nUser Value: \"fsParam.value\"");
+		console.warn("User attempted to activate fullscreen mode while URL Search Parameter \"fsAvailable\" was either set to false or not defined.\nUser Value: \"" + fsParam.value + "\"");
 		console.warn("Failed to execute 'requestFullscreen' on 'Element': API can only be initiated by a user gesture.");
 	}
 }			
