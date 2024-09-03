@@ -95,6 +95,14 @@
 	    elem.msRequestFullscreen();
 	  }
 	}
+				
+	const urlParams = new URLSearchParams(window.location.search);
+	const fsParam = urlParams.get('fullscreen');
+	if (fsParam == true) {
+		openFullscreen();
+	}
+				
+
 
 	function getRandomItem(arr) {
 		const randomIndex = Math.floor(Math.random() * arr.length);
