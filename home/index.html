@@ -53,7 +53,7 @@
 			}
 		</style>
 	</head>
-	<body onload="openFullscreen();">
+	<body onclick="openFullscreen();">
 		<div class="info">
 			<span id="quotebox">Loading...</span>
 			<h1 id="time1">00:00</h1>
@@ -89,9 +89,9 @@
 	function openFullscreen() {
   	if (elem.requestFullscreen) {
  	   elem.requestFullscreen();
- 	 } else if (elem.webkitRequestFullscreen) { /* Safari */
+ 	 } else if (elem.webkitRequestFullscreen) {
 	    elem.webkitRequestFullscreen();
-	  } else if (elem.msRequestFullscreen) { /* IE11 */
+	  } else if (elem.msRequestFullscreen) {
 	    elem.msRequestFullscreen();
 	  }
 	}
