@@ -136,7 +136,7 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"Everything in the universe is either pizza or not pizza.",
 	`<span style="color: purple;">for</span> _, item <span style="color: purple;">in</span> <span style="color: yellow;">ipairs</span>(universe) <span style="color: purple;">do</span> <span style="color: purple;">if</span> item == <span style="color: green;">"pizza"</span> <span style="color: purple;">then</span> -- pizza <span style="color: purple;">else</span> item ~= <span style="color: green;">"pizza"</span> -- not pizza <span style="color: purple;">end end</span> `,
 	"It's faster to say \"World Wide Web\" than \"WWW\".",
-	"Someone definitely messed up by not making September, October, November and December the 7th, 8th, 9th and 10th months."
+	"Someone definitely messed up by not making September, October, November and December the 7th, 8th, 9th and 10th months. Edit: it was, until when Julius Caesar and Augustus had months named after them (July and August)."
 	];
 
 	function getRandomItem(arr) {
