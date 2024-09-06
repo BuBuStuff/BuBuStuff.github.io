@@ -135,7 +135,7 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"By wearing a shirt inside out, everyone else would be wearing it but me.",
 	"Everything in the universe is either pizza or not pizza.",
 	`<span style="color: purple;">for</span> _, item <span style="color: purple;">in</span> <span style="color: yellow;">ipairs</span>(universe) <span style="color: purple;">do</span> <span style="color: purple;">if</span> item == <span style="color: green;">"pizza"</span> <span style="color: purple;">then</span> -- pizza <span style="color: purple;">else</span> item ~= <span style="color: green;">"pizza"</span> -- not pizza <span style="color: purple;">end end</span> `,
-	"PLACEHOLDER"
+	"It's faster to say \"World Wide Web\" than \"WWW\"."
 	];
 
 	function getRandomItem(arr) {
