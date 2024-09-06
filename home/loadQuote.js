@@ -140,10 +140,10 @@ let quotes = ["War does not determine who is right - only who is left.",
 
 	function getRandomItem(arr) {
 		const randomIndex = Math.floor(Math.random() * arr.length);
-		print("arr.length = " + arr.length);
-		print("randomIndex = " + randomIndex);
+		console.log("arr.length = " + arr.length);
+		console.log("randomIndex = " + randomIndex);
 		const item = arr[randomIndex];
-		print("arr[randomIndex] = " + item);
+		console.log("arr[randomIndex] = " + item);
 		return item;
 	}
 	function ldch() {
