@@ -130,7 +130,8 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"Some people forgive but don\'t forget. I forget before even deciding whether or not to forgive.",
 	"You might have made a livesaving decision and not even know it.",
 	"If I bought the Mona Lisa, no one could stop me from eating it. Edit: <b>Cultural Protection Laws</b> and the <b>UNESCO Convention agreement</b> could stop me...",
-	"Literally everything you\'ve ever done has led up to you reading this."
+	"Literally everything you\'ve ever done has led up to you reading this.",
+	"You can press Alt + R to load a new... whatever you\'d call these."
 	];
 
 	function getRandomItem(arr) {
