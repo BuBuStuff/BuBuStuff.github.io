@@ -120,7 +120,17 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"Prepare and prevent, don't repair and repent.",
 	"If I've learned anything from video games, it's that when you meet enemies it means you're going in the right direction.",
 	"A drunken man's words are a sober man's thoughts.",
-	"You might still be \'it\' from a game of tag years ago."
+	"You might still be \'it\' from a game of tag years ago.",
+	"Cannibalism can solve both world hunger and overpopulation at the same time.",
+	"Time-travellers are afraid of changing the present by doing something small in the past, but people now don't really think they can change the future doing something small.",
+	"I believe in annoyed at first sight",
+	"If you start with a greeting, then say \"I can\'t hear youuu\", I will have eternal hatred for you from that moment on.",
+	"Anxiety is basically conspiracy theories about yourself",
+	"Spoons in restaurants have probably been in a thousand other peoples' mouths.",
+	"Some people forgive but don\'t forget. I forget before even deciding whether or not to forgive.",
+	"You might have made a livesaving decision and not even know it.",
+	"If I bought the Mona Lisa, no one could stop me from eating it. Edit: <b>Cultural Protection Laws</b> and the <b>UNESCO Convention agreement</b> could stop me...",
+	"Literally everything you\'ve ever done has led up to you reading this."
 	];
 
 	function getRandomItem(arr) {
