@@ -142,7 +142,7 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"Billionaires have hundreds of thousands of dollars perpetually regenerating. At the bare minimum, that's nearly 14 times the median amount in any human's savings account. Perpetually regenerating.",
 	"A wad of fat and water in your skull runs a complex biomechanical suit using around 20% of the energy it takes to power a lightbulb.",
 	"Every application that censors text has an entire database of these explicit words.",
-	`Saying "<span style="text-shadow: 0 0 32px white; color: transparent;">Fuck</span> it" is more motivating than "you can do this".`
+	`Saying "F<span style="text-shadow: 0 0 32px gray; color: transparent;">uck</span> it" is more motivating than "you can do this".`
 	];
 
 	function getRandomItem(arr) {
