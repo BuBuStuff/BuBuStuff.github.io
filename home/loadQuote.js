@@ -96,7 +96,9 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"Count that day lost whose low descending sun. Views from thy hand no worthy action done.",
 	"Double your pleasure, double your fun with . . . Doublemint, Doublemint, Doublemint gum.",
 	"Worrying works! 90% of the things I worry about never happen.",
-	"Keep the dream alive; hit the snooze button!"
+	"Keep the dream alive; hit the snooze button!",
+	"The only person you need to be better than, is the person you were yesterday.",
+	"Life's too short for homework."
 	];
 
 	function getRandomItem(arr) {
