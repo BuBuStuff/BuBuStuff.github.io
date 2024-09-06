@@ -140,7 +140,9 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"Somewhere, someone's having the best day of their life right now.",
 	"Gravity is constantly pulling you towards a 5200&deg;C (9392&deg;F) core of magma.",
 	"Billionaires have hundreds of thousands of dollars perpetually regenerating. At the bare minimum, that's nearly 14 times the median amount in any human's savings account. Perpetually regenerating.",
-	"A wad of fat and water in your skull runs a complex biomechanical suit using around 20% of the energy it takes to power a lightbulb."
+	"A wad of fat and water in your skull runs a complex biomechanical suit using around 20% of the energy it takes to power a lightbulb.",
+	"Every application that censors text has an entire database of these explicit words.",
+	`Saying "<span style="text-shadow: 0 0 32px white; color: transparent;">Fuck</span> it" is more motivating than "you can do this".`
 	];
 
 	function getRandomItem(arr) {
