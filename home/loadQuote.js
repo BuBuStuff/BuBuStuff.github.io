@@ -119,7 +119,8 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"If you add to tthe truth, you subtract from it.",
 	"Prepare and prevent, don't repair and repent.",
 	"If I've learned anything from video games, it's that when you meet enemies it means you're going in the right direction.",
-	"A drunken man's words are a sober man's thoughts."
+	"A drunken man's words are a sober man's thoughts.",
+	"You might still be \'it\' from a game of tag years ago."
 	];
 
 	function getRandomItem(arr) {
