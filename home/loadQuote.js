@@ -138,7 +138,9 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"It's faster to say \"World Wide Web\" than \"WWW\".",
 	"Someone definitely messed up by not making September, October, November and December the 7th, 8th, 9th and 10th months. Edit: it was, until when Julius Caesar and Augustus had months named after them (July and August).",
 	"Somewhere, someone's having the best day of their life right now.",
-	"Gravity is constantly pulling you towards a 5200&deg;C (9392&deg;F) core of magma.
+	"Gravity is constantly pulling you towards a 5200&deg;C (9392&deg;F) core of magma.",
+	"Billionaires have hundreds of thousands of dollars perpetually regenerating. At the bare minimum, that's nearly 14 times the median amount in any human's savings account. Perpetually regenerating.",
+	"A wad of fat and water in your skull runs a complex biomechanical suit using less energy than it takes to power a lightbulb."
 	];
 
 	function getRandomItem(arr) {
