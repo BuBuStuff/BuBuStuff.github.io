@@ -143,7 +143,8 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"A wad of fat and water in your skull runs a complex biomechanical suit using around 20% of the energy it takes to power a lightbulb.",
 	"Every application that censors text has an entire database of these explicit words.",
 	`Saying "F<span style="text-shadow: 0 0 32px black; color: transparent;">uck</span> it" is more motivating than "you can do this".`,
-	"Whoever coined the term coined the term coined the term coined the term."
+	"Whoever coined the term coined the term coined the term coined the term.",
+	"Having people acknowlegde your existence is a wonderful thing."
 	];
 
 	function getRandomItem(arr) {
