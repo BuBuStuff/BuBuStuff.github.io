@@ -201,10 +201,13 @@ let quotes = ["War does not determine who is right - only who is left.",
 
 	function freezeQuotes() {
 		clearInterval(intq);
+		console.warn("The freezeQuotes() function can only be used once per session. After you run continueQuotes(), freezeQuotes() will only be available after the next reload.");
+		
 	}
 
 	function continueQuotes() {
 		let intq = setInterval(ldch, 20000);
+		console.warn("The freezeQuotes() function can only be used once per session. Since you have run continueQuotes(), freezeQuotes() will only be available after the next reload.");
 	}
 
 	function loadDB() {
