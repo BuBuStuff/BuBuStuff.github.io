@@ -164,15 +164,19 @@ let quotes = ["War does not determine who is right - only who is left.",
 
 	function getRandomItem(arr) {
 		const randomIndex = Math.floor(Math.random() * arr.length);
+		console.log("Quote selected. Details:");
 		console.log("arr.length = " + arr.length);
 		console.log("randomIndex = " + randomIndex);
 		const item = arr[randomIndex];
 		console.log("arr[randomIndex] = " + item);
+		console.log("{END}");
 		return item;
 	}
 	function ldch() {
+		console.log("New quote requested");
 		document.getElementById('quotebox').innerHTML = "Loading...";
 		setTimeout(chgq, 500);
+		console.log("Selecting random quote");
 	}
 
 	function chgq() {
