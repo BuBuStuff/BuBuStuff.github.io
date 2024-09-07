@@ -168,7 +168,7 @@ let quotes = ["War does not determine who is right - only who is left.",
 		const randomIndex = Math.floor(Math.random() * arr.length);
 		console.log("Quote selected. Details:");
 		console.log("arr.length = " + arr.length);
-		console.log("randomIndex = " + randomIndex);
+		console.log("quoteIndex = " + randomIndex);
 		const item = arr[randomIndex];
 		console.log("arr[randomIndex] = " + item);
 		console.log("Quote loaded successfully");
