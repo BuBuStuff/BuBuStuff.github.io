@@ -162,7 +162,8 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"It's no use going back to yesterday, because I was a different person then."
 	];
 
-	console.log("Output active"); 
+	console.log("Output active");
+	console.log("To manually load a quote, use the load(quoteIndex) function.");
 
 	function getRandomItem(arr) {
 		const randomIndex = Math.floor(Math.random() * arr.length);
