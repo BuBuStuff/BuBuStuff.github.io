@@ -163,7 +163,7 @@ let quotes = ["War does not determine who is right - only who is left.",
 	];
 
 	console.log("Output active");
-	console.log("To manually load a quote, use the load(quoteIndex) function.");
+	console.log("To manually load a quote, use the load(quoteIndex) function.\nTo stop new quotes from automatically loading, use the freezeQuote() function.\nTo continue automatically loading new quotes after the freezeQuote() function is used, use the continueQuotes() function.\nTo generate a new random quote, use the ldch() function or press Alt + R.");
 
 	function getRandomItem(arr) {
 		const randomIndex = Math.floor(Math.random() * arr.length);
@@ -195,5 +195,15 @@ let quotes = ["War does not determine who is right - only who is left.",
 		let quote = getRandomItem(quotes);
 		document.getElementById('quotebox').innerHTML = quote;
 	}
+
 	ldch();
-	setInterval(ldch, 20000);
+
+	let intq = setInterval(ldch, 20000);
+
+	function freezeQuotes() {
+		clearInterval(intq);
+	}
+
+	function continueQuotes() {
+		let intq = setInterval(ldch, 20000);
+	}
