@@ -144,7 +144,8 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"Every application that censors text has an entire database of these explicit words.",
 	`Saying "F<span style="text-shadow: 0 0 32px black; color: transparent;">uck</span> it" is more motivating than "you can do this".`,
 	"Whoever coined the term coined the term coined the term coined the term.",
-	"Having people acknowlegde your existence is a wonderful thing."
+	"Having people acknowlegde your existence is a wonderful thing.",
+	"Better late than never, but never late is better."
 	];
 
 	function getRandomItem(arr) {
