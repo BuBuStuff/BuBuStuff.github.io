@@ -150,7 +150,16 @@ let quotes = ["War does not determine who is right - only who is left.",
 	"Most people in the world don't realize that human nature isn't scalar, but vectorial.",
 	"The owls are not what they seem.",
 	"Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.",
-	"You know you\'re truly happy when you can\'t sleep beacuse reality is finally better than your dreams."
+	"You know you\'re truly happy when you can\'t sleep beacuse reality is finally better than your dreams.",
+	"Outside of a dog, a book is man's best friend. Inside of a dog it's too dark to read.",
+	"A day without sunshine is, well, night.",
+	"Some people never go crazy. What truly horrible lives they must lead.",
+	"The trouble with having an open mind, of course, is that people will insist on coming along and trying to put things in it.",
+	"Go to heaven for the climate and hell for the company.",
+	"I am free of prejudice. I hate everyone equally.",
+	"The reason I talk to myself is because I’m the only one whose answers I accept.",
+	"I love mankind, it's the people I can't stand.",
+	"It's no use going back to yesterday, because I was a different person then."
 	];
 
 	function getRandomItem(arr) {
