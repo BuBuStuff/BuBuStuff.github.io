@@ -145,7 +145,12 @@ let quotes = ["War does not determine who is right - only who is left.",
 	`Saying "F<span style="text-shadow: 0 0 32px black; color: transparent;">uck</span> it" is more motivating than "you can do this".`,
 	"Whoever coined the term coined the term coined the term coined the term.",
 	"Having people acknowlegde your existence is a wonderful thing.",
-	"Better late than never, but never late is better."
+	"Better late than never, but never late is better.",
+	"The ideal tool for controlling people is fear. And nothing overwhelms people more than an unseen fear.",
+	"Most people in the world don't realize that human nature isn't scalar, but vectorial.",
+	"The owls are not what they seem.",
+	"Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.",
+	"You know you\'re truly happy when you can\'t sleep beacuse reality is finally better than your dreams."
 	];
 
 	function getRandomItem(arr) {
