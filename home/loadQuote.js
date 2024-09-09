@@ -89,7 +89,7 @@ let quotes = ["Item in index 0 is not in use.", "War does not determine who is r
 	"In any situation, the best thing you can do is the right thing; the next best thing you can do is the wrong thing; the worst thing you can do is nothing.",
 	"The power of the people is much stronger than the people in power.",
 	"Finding a million ways that won't work isn't failing.",
-	"If you can't your brakes, make your horn louder.",
+	"If you can't fix your brakes, make your horn louder.",
 	"The shinbone is a device for finding furniture in a dark room.",
 	"Holding on to anger is like grasping a hot coal with the intent of throwing it at someone else; you are the one who gets burned.",
 	"I have to exercise early in the morning before my brain figures out what I’m doing.",
