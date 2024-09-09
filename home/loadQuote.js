@@ -159,7 +159,8 @@ let quotes = ["Item in index 0 is not in use.", "War does not determine who is r
 	"I am free of prejudice. I hate everyone equally.",
 	"The reason I talk to myself is because I’m the only one whose answers I accept.",
 	"I love mankind, it's the people I can't stand.",
-	"It's no use going back to yesterday, because I was a different person then."
+	"It's no use going back to yesterday, because I was a different person then.",
+	"ADHD is weird. You could be getting water and the next thing you know you\'re reading about Greenland, like how I was supposed to be doing my homework when I made this."
 	];
 
 	console.log("Output active");
