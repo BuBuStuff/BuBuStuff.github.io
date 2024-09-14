@@ -31,7 +31,7 @@ let quotes = ["Item in index 0 is not in use.", "War does not determine who is r
 	"If you steal from one author, it's plagiarism; if you steal from many, it's research.",
 	"If you think nobody cares if you're alive, try missing a couple of car payments.",
 	"How is it one careless match can start a forest fire, but it takes a whole box to start a campfire?",
-	"We can't choose our relatives; thank God we can choose our friends.",
+	"We can't choose our relatives; at least we can choose our friends.",
 	"Children: You spend the first 2 years of their life teaching them to walk and talk. Then you spend the next 16 telling them to sit down and shut-up.",
 	"Nothing sucks more than that moment during an argument when you realize you're wrong.",
 	"People say nothing is impossible, but I do nothing at all.",
