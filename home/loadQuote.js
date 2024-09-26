@@ -161,7 +161,8 @@ let quotes = ["Item in index 0 is not in use.", "War does not determine who is r
 	"I love mankind, it's the people I can't stand.",
 	"It's no use going back to yesterday, because I was a different person then.",
 	"ADHD is weird. You could be getting water and the next thing you know you\'re reading about Greenland, like how I was supposed to be doing my homework when I made this.",
-	"A padlock only stops an honest man."
+	"A padlock only stops an honest man.",
+	"If you tolerate everything, you stand for nothing."
 	];
 
 	console.log("Output active");
