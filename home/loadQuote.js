@@ -214,8 +214,8 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	}
 
 	function loadDB(arrayName) {
-		console.log("Loading database \"" + arrayName + "\"...");
-		console.log(arrayname);
+		console.log("Loading database \"" + arrayName.toString() + "\"...");
+		console.log(arrayName);
 	}
 
 
