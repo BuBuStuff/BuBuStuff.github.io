@@ -1,4 +1,4 @@
-let quotes = ["Item in index 0 is not in use.", "War does not determine who is right - only who is left.",
+let quotes = ["Item at index 0 is not in use.", "War does not determine who is right - only who is left.",
 	"When you do crazy things, expect crazy results",
 	"I dream of a better tomorrow, where chickens can cross the road and not be quested about their motives",
 	"No I didn't trip, the floor looked like it needed a hug",
@@ -68,7 +68,6 @@ let quotes = ["Item in index 0 is not in use.", "War does not determine who is r
 	"Life is like a mountain: you can say you've reached the top only after you've climed back down.",
 	"This is the 69th line in the script!",
 	"People die when they get killed.",
-	"If you put six locks on my door all in a row, when you go out, lock every other one. No matter how long somebody stands there picking the locks, they are always locking three.",
 	"If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is.",
 	"First the doctor told me the good news: I was going to have a disease named after me.",
 	"It's never too late to be what you could have been.",
@@ -214,7 +213,10 @@ let quotes = ["Item in index 0 is not in use.", "War does not determine who is r
 		console.warn("The freezeQuotes() function can only be used once per session. Since you have run continueQuotes(), freezeQuotes() will only be available after the next reload.");
 	}
 
-	function loadDB() {
-		console.log("Loading database");
-		console.log(quotes);
+	function loadDB(arrayname) {
+		console.log("Loading database \"" + arrayname + "\""...);
+		console.log(arrayname);
 	}
+
+
+let extras = {"Item at index 0 is not in use.", "If you put six locks on my door all in a row, when you go out, lock every other one. No matter how long somebody stands there picking the locks, they are always locking three."}
