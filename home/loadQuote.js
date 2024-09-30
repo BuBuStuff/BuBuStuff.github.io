@@ -66,7 +66,7 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	"There are two types of people in this world: sane people and people who like Chromebooks.",
 	"You're either the butcher or the cattle.",
 	"Life is like a mountain: you can say you've reached the top only after you've climed back down.",
-	"This is the 69th line in the script!",
+	"This is the 69th line in the JavaScript!", // line must stay on line 69
 	"People die when they get killed.",
 	"If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is.",
 	"First the doctor told me the good news: I was going to have a disease named after me.",
