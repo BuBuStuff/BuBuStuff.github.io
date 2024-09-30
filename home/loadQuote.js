@@ -165,7 +165,7 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	];
 
 	console.log("Output active");
-	console.log("To manually load a quote, use the load(quoteIndex) function.\nTo stop new quotes from automatically loading, use the freezeQuote() function.\nTo continue automatically loading new quotes after the freezeQuote() function is used, use the continueQuotes() function.\nTo generate a new random quote, use the ldch() function or press Alt + R.\nTo load the full database of available quotes, use the loadDB() function.");
+	console.log("load(quoteIndex) - Manually loads a quote.\nfreezeQuote() - Stops new quotes from automatically loading.\ncontinueQuotes() - Resumes automatic loading of new quotes after the freezeQuote() function has been used.\nldch() - Generates a new random quote (You can also press Alt+R).\nloadDB(arrayName) - loads the specified array database. Available valuse: \"quotes\", \"extras\";");
 
 	function getRandomItem(arr) {
 		const randomIndex = Math.floor(Math.random() * arr.length);
@@ -213,7 +213,7 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 		console.warn("The freezeQuotes() function can only be used once per session. Since you have run continueQuotes(), freezeQuotes() will only be available after the next reload.");
 	}
 
-	function loadDB(arrayname) {
+	function loadDB(arrayName) {
 		console.log("Loading database \"" + arrayname + "\""...);
 		console.log(arrayname);
 	}
