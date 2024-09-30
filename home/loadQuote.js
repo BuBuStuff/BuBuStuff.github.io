@@ -219,4 +219,4 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	}
 
 
-let extras = {"Item at index 0 is not in use.", "If you put six locks on my door all in a row, when you go out, lock every other one. No matter how long somebody stands there picking the locks, they are always locking three."}
+let extras = ["Item at index 0 is not in use.", "If you put six locks on my door all in a row, when you go out, lock every other one. No matter how long somebody stands there picking the locks, they are always locking three."]
