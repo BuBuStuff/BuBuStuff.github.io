@@ -165,7 +165,7 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	];
 
 	console.log("Console active");
-	console.log("load(quoteIndex) - Manually loads a quote. Cannot load from \"extras\". Possible values: 1-" + quotes.length + "\nfreezeQuote() - Stops new quotes from automatically loading.\ncontinueQuotes() - Resumes automatic loading of new quotes after the freezeQuote() function has been used.\nldch() - Generates a new random quote (You can also press Alt + R).\nloadDB(arrayName) - loads the specified array database. Available values: \"quotes\", \"extras\"");
+	console.log("Available user console functions:\nload(quoteIndex) - Manually loads a quote. Cannot load from \"extras\". Possible values: 1-" + quotes.length + "\nfreezeQuote() - Stops new quotes from automatically loading.\ncontinueQuotes() - Resumes automatic loading of new quotes after the freezeQuote() function has been used.\nldch() - Generates a new random quote (You can also press Alt + R).\nloadDB(arrayName) - loads the specified array database. Available values: \"quotes\", \"extras\"");
 
 	function getRandomItem(arr) {
 		const randomIndex = Math.floor(Math.random() * arr.length);
