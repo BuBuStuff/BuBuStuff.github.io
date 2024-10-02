@@ -161,7 +161,8 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	"It's no use going back to yesterday, because I was a different person then.",
 	"ADHD is weird. You could be getting water and the next thing you know you\'re reading about Greenland, like how I was supposed to be doing my homework when I made this.",
 	"A padlock only stops an honest man.",
-	"If you tolerate everything, you stand for nothing."
+	"If you tolerate everything, you stand for nothing.",
+	"Life isn't measured by the breaths you take, it's measured by the moments that take your breath away."
 	];
 
 	console.log("Console active");
