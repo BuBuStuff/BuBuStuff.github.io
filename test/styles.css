@@ -28,8 +28,8 @@ h1 {
 .quiz {
   text-align: center;
   position: fixed;
-  /*right: 40%;
-  left:0;*/
+  right: 50%;
+  left: 50;
 }
 .quiz img {
   margin-top: -3rem;
@@ -50,8 +50,8 @@ pre {
 .page-doc {
   background: #ff705855;
   position: relative;
-  /*margin-left: 60%;*/
-  /*padding: 0 .25rem;*/
+  margin-left: 50%;
+  padding: 0 .25rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@ pre {
 .progress {
   position: fixed;
   top: 0;
-  /*left: 0;*/
+  left: 50%;
   background: var(--red);
   color: white;
   /*padding: 0.25rem 1rem;*/
@@ -73,10 +73,10 @@ pre {
 button {
   font-family: inherit;
   text-transform: uppercase;
-  /*margin: 1.5rem;
+  margin: 1.5rem;
   border: 2px solid;
   padding: 1rem 2rem 0.9375rem;
-  border-radius: .5rem;*/
+  border-radius: .5rem;
   color: var(--red);
   background: transparent;
   letter-spacing: 2px;
@@ -192,8 +192,8 @@ button:hover {
 }
 .label-ctnr label {
   position: relative;
-  /*left: -.75rem;
-  padding: 0.5rem 1rem 0.5rem 1.5rem;*/
+  left: -.75rem;
+  padding: 0.5rem 1rem 0.5rem 1.5rem;
   border-radius: 5px;
   font-weight: 700;
   text-transform: uppercase;
@@ -205,7 +205,7 @@ button:hover {
 }
 .label-ctnr label span {
   position: absolute;
-  /*left: 0;*/
+  left: 50%;
 }
 .label-ctnr:not(.disabled) label:hover {
   cursor: pointer;
