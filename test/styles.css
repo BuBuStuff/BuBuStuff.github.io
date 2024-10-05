@@ -63,7 +63,7 @@ pre {
 .progress {
   position: fixed;
   top: 0;
-  left: 0;
+  /*left: 0;*/
   background: var(--red);
   color: white;
   padding: 0.25rem 1rem;
