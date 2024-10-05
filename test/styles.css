@@ -23,6 +23,8 @@ h1 {
 
 .app {
   min-height: 100vh;
+  max-width: fit-content !important;
+  margin-inline: auto !important;
 }
 
 .quiz {
