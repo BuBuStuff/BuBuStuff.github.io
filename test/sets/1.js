@@ -1,6 +1,6 @@
 const testTitle = "Dead Leaves test"; // The title of the test on the starter screen
 const testDescription = "Made by BuBu"; // The description of the test on the starter screen
-const questionSuffix = "ended"; // The text appearing after each question
+const questionSuffix = ""; // The text appearing after each question (leave empty if none)
 
 
 // How to use:
