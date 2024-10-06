@@ -1,3 +1,6 @@
+const title = "Dead Leaves test";
+const description = "Made by BuBu";
+
 const questions = [
 {
   'proposal': 'Are cupcakes made of cupcake?',
