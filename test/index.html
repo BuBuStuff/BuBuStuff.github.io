@@ -82,8 +82,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
   <script src="sets/1.js"></script>
 <script>
-  document.getElementByID("titleset").innerHTML = title;
-  document.getElementByID("descriptionset").innerHTML = description;
+  function applyText() {
+    document.getElementByID("titleset").innerHTML = testTitle;
+    document.getElementByID("descriptionset").innerHTML = testDescription;
+  }
+  applyText();
 </script>
       <script>
 Vue.config.devtools = true;
