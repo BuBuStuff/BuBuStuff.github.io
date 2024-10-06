@@ -1,6 +1,6 @@
 const questions = [
 {
-  'selector': 'p.out',
+  //'selector': 'p.out',
   'proposal': 'p.out',
   'answer': 'yes' },
 
