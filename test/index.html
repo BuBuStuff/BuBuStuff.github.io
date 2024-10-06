@@ -40,7 +40,7 @@
   <pagedoc></pagedoc>
   <transition name="fade2">
     <section class="score" v-if="askedForResults">
-      <h1>Your Result is</h1>
+      <h1 id="resultset">resultset</h1>
       <finalresults :finalpercentage="finalPercentage"></finalresults>
       <button type="button" @click="playAgain">Play Again</button>
       <p>Made with BuBu Testify</p>
@@ -85,6 +85,7 @@
 <script>
   function applyText() {
     document.getElementById("titleset").innerHTML = testTitle;
+    document.getElementById("resultset").innerHTML = testTitle;
     document.getElementById("descriptionset").innerHTML = testDescription;
     document.getElementById("startBtn").innerHTML = startButtonText;
   }
