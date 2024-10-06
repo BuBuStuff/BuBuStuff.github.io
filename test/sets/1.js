@@ -1,5 +1,5 @@
-const title = "Dead Leaves test";
-const description = "Made by BuBu";
+const testTitle = "Dead Leaves test";
+const testDescription = "Made by BuBu";
 
 const questions = [
 {
