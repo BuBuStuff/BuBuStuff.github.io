@@ -1,6 +1,12 @@
-const testTitle = "Dead Leaves test";
-const testDescription = "Made by BuBu";
+const testTitle = "Dead Leaves test"; // The title of the test on the starter screen
+const testDescription = "Made by BuBu"; // The description of the test on the starter screen
+const questionSuffix = ""; // The text appearing after each question
 
+
+// How to use:
+// For each question create a new entry
+// The question is determined by the "proposal" field
+// The answer to the question is determined by the "answer" field. It can be either "yes" or "no".
 const questions = [
 {
   'proposal': 'Are cupcakes made of cupcake?',
