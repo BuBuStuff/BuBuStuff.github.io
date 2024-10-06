@@ -15,10 +15,10 @@
     <div v-if="!isIdle" class="progress">{{currentIndex+1}} / {{total}}
     </div>
     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/darts.svg" width="120" alt=""/>
-    <h1>Well-aimed?</h1>
+    <h1 id="titleset">Well-aimed?</h1>
     <transition name="fade" mode="out-in">  
       <div v-if="isIdle" key="s1">
-        <p>Your task is to decide whether a given selector targets <strong>all and only</strong> the elements marked on the right.</p>
+        <p id="descriptionset">Your task is to decide whether a given selector targets <strong>all and only</strong> the elements marked on the right.</p>
         <button type="button" @click="start">Let's Start</button>
       </div>
       <question v-else :key="currentIndex" :v="v" :q="proposal" @answered="go" :disabled="disabled" :correct="answer"></question>
@@ -81,7 +81,10 @@
 </script>-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
   <script src="sets/1.js"></script>
-
+<script>
+  document.getElementByID("titleset").innerHTML = title;
+  document.getElementByID("descriptionset").innerHTML = description;
+</script>
       <script>
 Vue.config.devtools = true;
 
