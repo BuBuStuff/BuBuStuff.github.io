@@ -64,46 +64,37 @@ const questions = [
   'answer': 'no' },
 
 {
-  'selector': 'footer > :nth-child(2n+1)',
   'proposal': 'footer > :nth-child(2n+1)',
   'answer': 'yes' },
 
 {
-  'selector': 'footer > :nth-child(2n+1)',
   'proposal': 'footer :nth-child(2n+1)',
   'answer': 'no' },
 
 {
-  'selector': ':empty',
   'proposal': ':empty',
   'answer': 'yes' },
 
 {
-  'selector': '[class*="widget"]',
   'proposal': '[class*="widget"]',
   'answer': 'yes' },
 
 {
-  'selector': '.widget > *',
   'proposal': '.widget > *',
   'answer': 'yes' },
 
 {
-  'selector': '.widget.widget1',
   'proposal': '.widget.widget1',
   'answer': 'yes' },
 
 {
-  'selector': 'div.widget1',
   'proposal': 'div.widget1',
   'answer': 'yes' },
 
 {
-  'selector': '[class^="widget"]',
   'proposal': '[class^="widget"]',
   'answer': 'yes' },
 
 {
-  'selector': 'section :first-of-type',
   'proposal': 'section :first-of-type',
   'answer': 'yes' }];
