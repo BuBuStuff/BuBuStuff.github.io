@@ -8,7 +8,9 @@
 html {
   font-family: Poppins;
   line-height: 1.5;
-  color: var(--black);
+  /*color: var(--black);*/
+  color: #a3baca;
+  background-color: #121212;
 }
 a {
   color: inherit;
