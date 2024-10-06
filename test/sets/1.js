@@ -1,7 +1,8 @@
-// BuBu Testify Set
+// BuBu Testify Set Placeholder
 
-const testTitle = "Dead Leaves test"; // The title of the test on the starter screen
-const testDescription = "Made by BuBu"; // The description of the test on the starter screen
+const testTitle = "Title Goes Here"; // The title of the test on the start screen
+const testDescription = "Amazing Description"; // The description of the test on the starter screen
+const startButtonText = "Start"; // The text displayed in the button shown on the start screen to start the Testify
 const questionSuffix = ""; // The text appearing after each question (leave empty if none)
 
 
