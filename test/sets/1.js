@@ -1,4 +1,4 @@
-// BuBu Testify Set Placeholder
+// BuBu Testify Set Template
 
 const testTitle = "Title Goes Here"; // The title of the test on the start screen
 const testDescription = "Amazing Description"; // The description of the test on the starter screen
