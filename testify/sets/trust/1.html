@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body translate="no">
+  <!-- Version 1.4 -->
+  <div id="app" class="app">
+  <section class="quiz" id="quiz">
+    <div v-if="!isIdle" class="progress">{{currentIndex+1}} / {{total}}
+    </div>
+    <transition name="fade">
+      <button v-show="shouldShowNext" type="button" @click="displayNext">Next</button>
+    </transition>
+  </section>
+</div>
+
+<script type="text/x-template" id="finalresults">
+  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 40" width="300px">
+    <title>Results Board</title>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2px" class="cls-1" d="M15.93,13H2V38.5H49V13H35.07" transform="translate(-0.5 0)"/><path fill="#fff" class="cls-2" d="M21,6.65a.15.15,0,0,0-.12-.11l-2.21-.3-1-2.16a.16.16,0,0,0-.28,0l-1,2.16-2.21.3a.16.16,0,0,0-.12.11.15.15,0,0,0,0,.16L15.66,8.5l-.44,2.31a.17.17,0,0,0,.06.16.15.15,0,0,0,.16,0L17.5,9.9,19.56,11l.07,0a.14.14,0,0,0,.09,0,.17.17,0,0,0,.06-.16L19.34,8.5,21,6.81A.15.15,0,0,0,21,6.65Zm16,0a.15.15,0,0,0-.12-.11l-2.21-.3-1-2.16a.16.16,0,0,0-.28,0l-1,2.16-2.21.3a.16.16,0,0,0-.12.11.15.15,0,0,0,0,.16L31.66,8.5l-.44,2.31a.17.17,0,0,0,.06.16.15.15,0,0,0,.16,0L33.5,9.9,35.56,11l.07,0a.14.14,0,0,0,.09,0,.17.17,0,0,0,.06-.16L35.34,8.5,37,6.81A.15.15,0,0,0,37,6.65ZM30,3.41a.19.19,0,0,0-.16-.14L27,2.88,25.68.1a.21.21,0,0,0-.36,0L24,2.88l-2.83.39a.19.19,0,0,0-.16.14.21.21,0,0,0,0,.21l2.08,2.17-.57,3a.21.21,0,0,0,.07.21.2.2,0,0,0,.21,0L25.5,7.59,28.15,9l.09,0a.19.19,0,0,0,.12,0,.21.21,0,0,0,.07-.21l-.56-3,2.07-2.17A.21.21,0,0,0,30,3.41Z" transform="translate(-0.5 0)"/>
+    <text style="font-size:12px" x="12.5" y="30" fill="#fff" textLength="25" lengthAdjust="spacing" small>{{finalpercentage}}</text>  </svg>
+</script>
+    
+<!--<script type="text/x-template" id="page-doc">
+<div class="page-doc">
+    <header data-content1="<header>" data-content2="</header>">
+      <h1 data-content1="<h1>" data-content2="</h1>">&hellip;</h1>
+      <p class="intro" data-content1='<p class="intro">' data-content2="</p>">&hellip;</p>
+    </header>
+    <main data-content1="<main>" data-content2="</main>">
+      <section id="section1" data-content1='<section id="section1">' data-content2="</section>">
+        <h2 data-content1="<h2>" data-content2="</h2>">&hellip;</h2>
+        <p data-content1="<p>" data-content2="</p>">&hellip;</p>
+        <p data-content1="<p>" data-content2="</p>">&hellip;</p>
+      </section>
+      <p class='out' data-content1='<p class="out">' data-content2="</p>">&hellip;</p>
+    </main>
+    <footer data-content1='<footer>' data-content2="</footer>">
+      <div class="widget widget1" data-content1='<div class="widget widget1">' data-content2="</div>"><p data-content1="<p>" data-content2="</p>">&hellip;</p></div>
+      <div class="widget widget2" data-content1='<div class="widget widget2">' data-content2="</div>">
+        <div data-content1="<div>" data-content2="</div>"></div>
+      </div>
+      <div class="widget widget3" data-content1='<div class="widget widget3">' data-content2="</div>">
+        <div class="out" data-content1='<div class="out">' data-content2="</div>">&hellip;</div>
+      </div>
+    </footer>
+  </div>
+</script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+  <script src="sets/1.js"></script>
+<script>
+  function applyText() {
+    document.getElementById("titleset").innerHTML = testTitle;
+    document.getElementById("resultset").innerHTML = testTitle;
+    document.getElementById("descriptionset").innerHTML = testDescription;
+    document.getElementById("startBtn").innerHTML = startButtonText;
+  }
+  applyText();
+</script>
+      <script>
+Vue.config.devtools = true;
+
+
+
+
+Vue.component('question', {
+  props: ['v', 'q', 'disabled', 'correct'],
+  data() {
+    return {
+      answer: '',
+      a: [] };
+
+  },
+  computed: {
+    checked: {
+      get() {
+        return this.v;
+      },
+      set(val) {
+        this.a = val;
+      } },
+
+    displaySelector() {
+      return `${this.q} ${questionSuffix}`;
+    } },
+
+  template: `<div>
+<pre class="code">{{displaySelector}}</pre>
+<div :class="['label-ctnr', disabled ? 'disabled': '']"><label :class="[ feedbackClass(item), checkedClass(item)]" v-for="(item, i) in ['yes', 'no']">
+<span v-if="disabled && isChecked(item)">
+<svg v-if="isCorrectChecked(item)" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">  
+  <polyline class="path check" fill="none" stroke="#1698d0" stroke-width="20" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+</svg>
+<svg v-else version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">  
+  <line class="path line" fill="none" stroke="#ff7058" stroke-width="20" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3"/>
+  <line class="path line" fill="none" stroke="#ff7058" stroke-width="20" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" x2="34.4" y2="92.2"/>
+</svg>
+</span>
+<input @change="answerChecked" type="radio" :id="item" :value="item" v-model="checked" :disabled="disabled"/>{{item}}</label></div>
+
+<button v-if="answer" type="button" @click="submitAnswer">Answer</button>
+</div>`,
+  methods: {
+    answerChecked() {
+      this.$emit('answered', this.a);
+    },
+    checkedClass(item) {
+      return this.isChecked(item) ? 'checked' : 'not-checked';
+    },
+    isChecked(item) {
+      return item === this.checked;
+    },
+    isCorrectChecked(item) {
+      return item === this.checked && item === this.correct;
+    },
+    feedbackClass(item) {
+      if (!this.disabled) {
+        return;
+      }
+      return item === this.correct ? 'correct' : 'wrong';
+    } } });
+
+
+
+
+Vue.component('v-style', {
+  render: function (createElement) {
+    return createElement('style', this.$slots.default);
+  } });
+
+
+Vue.component('finalresults', {
+  props: ['finalpercentage'],
+  template: "#finalresults" });
+
+
+Vue.component('pagedoc', {
+  template: '#page-doc',
+  data() {
+    return {};
+  } });
+
+
+new Vue({
+  el: '#app',
+  data() {
+    return {
+      currentIndex: 0,
+      checkedAnswers: [],
+      v: [],
+      score: 0,
+      questions: [],
+      isIdle: true,
+      askedForResults: false };
+
+  },
+  computed: {
+    total() {
+      return this.questions.length;
+    },
+    finalPercentage() {
+      return `${Math.round(this.score / this.total * 100)}%`;
+    },
+    proposal() {
+      return this.questions[this.currentIndex].proposal;
+    },
+    selector() {
+      return this.questions[this.currentIndex].selector;
+    },
+    answer() {
+      return this.questions[this.currentIndex].answer;
+    },
+    isAnswered() {
+      return this.v.length !== 0;
+    },
+    disabled() {
+      return this.v.length !== 0;
+    },
+    isFinished() {
+      return this.currentIndex === this.total - 1;
+    },
+    shouldShowNext() {
+      return this.isAnswered && !this.isFinished;
+    },
+    allDone() {
+      return this.isAnswered && this.isFinished;
+    } },
+
+  methods: {
+    start() {
+      this.questions = questions.sort(function (a, b) {return 0.5 - Math.random();});
+      this.isIdle = false;
+    },
+    go(r) {
+      this.v = r;
+      if (this.checkAnswer(r)) {
+        this.score++;
+      }
+      this.disabled = true;
+      this.isAnswered = true;
+    },
+    checkAnswer(r) {
+      return r === this.questions[this.currentIndex].answer;
+    },
+    resetStep() {
+      this.isAnswered = false;
+      this.disabled = false;
+      this.v = [];
+    },
+    displayNext() {
+      this.currentIndex++;
+      this.resetStep();
+    },
+    playAgain() {
+      this.score = 0;
+      this.start();
+      this.currentIndex = 0;
+      this.askedForResults = false;
+      this.resetStep();
+    },
+    showResults() {
+      this.askedForResults = true;
+      this.isIdle = true;
+    } } });
+    </script>
+
+  
+</body>
+
+</html>
