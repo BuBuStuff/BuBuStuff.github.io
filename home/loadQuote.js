@@ -154,7 +154,7 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	"A day without sunshine is, well, night.",
 	"Some people never go crazy. What truly horrible lives they must lead.",
 	"The trouble with having an open mind, of course, is that people will insist on coming along and trying to put things in it.",
-	"Go to heaven for the climate and hell for the company.",
+	"Go to heaven for the environment and hell for the company.",
 	"I am free of prejudice. I hate everyone equally.",
 	"The reason I talk to myself is because I’m the only one whose answers I accept.",
 	"I love mankind, it's the people I can't stand.",
