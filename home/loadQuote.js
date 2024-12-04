@@ -166,7 +166,8 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	"Look in a mirror. Do you think you\'re ugly? If you say yes, you\'re fine. If you say no, look again.",
 	"Hate it when someone answers their own question? I do.",
 	"Use your eyes to see!",
-	"People undersetimate what 1HP of damage would feel like."
+	"People undersetimate what 1HP of damage would feel like in real life.",
+	"Losing hope grants you freedom"
 	];
 
 	console.log("Console active");
