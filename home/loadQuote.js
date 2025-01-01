@@ -167,7 +167,7 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	"Use your eyes to see!",
 	"People undersetimate what 1HP of damage would feel like in real life.",
 	"Losing hope grants you freedom",
-	"You can't lose what you don't have, but you can go into debt,
+	"You can't lose what you don't have, but you can go into debt",
 	"When in doubt, look confident.",
 	"If you set your goals high and fail, you will fail above everyone's success.",
 	"Always be careful following the masses; sometimes the <i>m</i> is silent.",
