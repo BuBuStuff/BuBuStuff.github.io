@@ -68,8 +68,7 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	"Life is like a mountain: you can say you've reached the top only after you've climed back down.",
 	"This is the 69th line in the JavaScript!", // line must stay on line 69
 	"People die when they get killed.",
-	"If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is.",
-	"First the doctor told me the good news: I was going to have a disease named after me.",
+ 	"First the doctor told me the good news: I was going to have a disease named after me.",
 	"It's never too late to be what you could have been.",
 	"You can't predict the future but you can invent it.",
 	"The scientific theory I like best is that the rings of Saturn are composed entirely of lost airline luggage.",
