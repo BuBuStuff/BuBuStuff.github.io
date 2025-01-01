@@ -82,7 +82,7 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	"Logic will get you from A to B. Imagination will take you everywhere.",
 	"If you have built castles in the air, your work need not be lost; that is where they should be. Now put the foundations under them.",
 	"Everything in moderation, including moderation.",
-	"Evening news is where they begin with \"Good evening,\" and then proceed to tell you why it isn't.",
+	"Evening news is where they begin with \"Good evening,\" and proceed to tell you why it isn't.",
 	"I read recipes the same way I read science fiction. I get to the end and I think, \"Well, that’s not going to happen.\"",
 	"In any situation, the best thing you can do is the right thing; the next best thing you can do is the wrong thing; the worst thing you can do is nothing.",
 	"The power of the people is much stronger than the people in power.",
@@ -167,7 +167,14 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	"Use your eyes to see!",
 	"People undersetimate what 1HP of damage would feel like in real life.",
 	"Losing hope grants you freedom",
-	"You can't lose what you don't have, but you can go into debt."
+	"You can't lose what you don't have, but you can go into debt,
+	"When in doubt, look confident.",
+	"If you set your goals high and fail, you will fail above everyone's success.",
+	"Always be careful following the masses; sometimes the <i>m</i> is silent.",
+	"People say it's the thought that counts, not the gift. People also say to think bigger. Guess both can't apply at once.",
+	"Keep your temper, nobody else wants it.",
+	"Some teachers are philosophical and shit and say stuff like \"life is precious don't waste it\", but they get angry when you walk out their classroom because school is a waste of time.",
+	"Wait for someone to ask you something and give you a scale of 1-10, ask is 6 or 7 high, they say yes, so now i have verbal confirmation scoring 65% in a test is high."
 	];
 
 	console.log("Console active");
