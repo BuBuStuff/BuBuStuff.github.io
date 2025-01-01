@@ -174,7 +174,8 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	"People say it's the thought that counts, not the gift. People also say to think bigger. Guess both can't apply at once.",
 	"Keep your temper, nobody else wants it.",
 	"Some teachers are philosophical and shit and say stuff like \"life is precious don't waste it\", but they get angry when you walk out their classroom because school is a waste of time.",
-	"Wait for someone to ask you something and give you a scale of 1-10, ask is 6 or 7 high, they say yes, so now i have verbal confirmation scoring 65% in a test is high."
+	"Wait for someone to ask you something and give you a scale of 1-10, ask is 6 or 7 high, they say yes, so now i have verbal confirmation scoring 65% in a test is high.",
+	"Time you enjoy wasting isn't time wasted."
 	];
 
 	console.log("Console active");
