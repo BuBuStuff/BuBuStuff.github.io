@@ -1,4 +1,4 @@
-let quotes = ["Item at index 0 is not in use.", "War does not determine who is right - only who is left.",
+var quotes = ["Item at index 0 is not in use.", "War does not determine who is right - only who is left.",
 	"When you do crazy things, expect crazy results",
 	"I dream of a better tomorrow, where chickens can cross the road and not be quested about their motives",
 	"No I didn't trip, the floor looked like it needed a hug",
@@ -208,13 +208,13 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	}
 
 	function chgq() {
-		let quote = getRandomItem(quotes);
+		var quote = getRandomItem(quotes);
 		document.getElementById('quotebox').innerHTML = quote;
 	}
 
 	ldch();
 
-	let intq = setInterval(ldch, 20000);
+	var intq = setInterval(ldch, 20000);
 
 	function freezeQuotes() {
 		clearInterval(intq);
@@ -223,15 +223,15 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	}
 
 	function continueQuotes() {
-		let intq = setInterval(ldch, 20000);
+		var intq = setInterval(ldch, 20000);
 		console.warn("The freezeQuotes() function can only be used once per session. Since you have run continueQuotes(), freezeQuotes() will only be available after the next reload.");
 	}
 
 	function loadDB(arrayName) {
-		let inputTitle = Object.keys({arrayName})[0]
+		var inputTitle = Object.keys({arrayName})[0]
 		console.log("Loading database \"" + inputTitle.toString() + "\"...");
 		console.log(arrayName);
 	}
 
 
-let extras = ["Item at index 0 is not in use.", "If you put six locks on my door all in a row, when you go out, lock every other one. No matter how long somebody stands there picking the locks, they are always locking three."]
+var extras = ["Item at index 0 is not in use.", "If you put six locks on my door all in a row, when you go out, lock every other one. No matter how long somebody stands there picking the locks, they are always locking three."]
