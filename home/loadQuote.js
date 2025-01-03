@@ -114,7 +114,7 @@ let quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	"When you have no winds, take to the oars.",
 	"If you think something small can't make a difference, try going to sleep with a mosquito in the room.",
 	"The difference between try and triumph is a little umph.",
-	"If you add to tthe truth, you subtract from it.",
+	"If you add to the truth, you subtract from it.",
 	"Prepare and prevent, don't repair and repent.",
 	"If I've learned anything from video games, it's that when you meet enemies it means you're going in the right direction.",
 	"A drunken man's words are a sober man's thoughts.",
