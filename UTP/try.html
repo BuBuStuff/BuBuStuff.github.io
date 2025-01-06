@@ -15,7 +15,7 @@
 <body class="text-center form-signin">
   <h2>BuBu Untrackable Pages Free Trial</h2>
 	<h5>Select permissions to continue to installation</h5><br>
-    <form action="" onchange="window.addEventListener('beforeunload', (event) => {event.preventDefault();event.returnValue = '';});">
+    <form action="" id="permsForm" onchange="window.addEventListener('beforeunload', (event) => {event.preventDefault();event.returnValue = '';});">
 	<input type="checkbox" value="allow-forms" id="allow-forms" class="cbb">
 	<label for="allow-forms">Allow Forms (sandbox-allow-forms)</label>
 	    <br>
@@ -36,13 +36,21 @@
 	    <br>
 	    <br>
 	    <br>
-		<button onclick="alert(createLink());this.disabled=true;document.getElementById('resetBTN').disabled=true;document.getElementsByClassName('cbb').disabled=true;" type="button" class="btn btn-light" value="Submit">Submit</button>
+		<button onclick="alert(createLink());this.disabled=true;document.getElementById('resetBTN').disabled=true;disableForm();" type="button" class="btn btn-light" value="Submit">Submit</button>
 		
 		<button type="reset" value="Reset" id="resetBTN" class="btn btn-danger" onclick="if (confirm('Are you sure you want to reset this form?')) {location.reload();} else {return false;}">Reset</button>
 
       </form>
   <br>
 	<script>
+		var formEl = document.getElementById('permsForm').elements;
+
+		function disableForm() {
+			for (var i = 0, len = formEl.length; i < len; ++i) {
+  				formEl[i].readOnly = true;
+			}
+		}
+
 		function getid(id) {
 			let allowid = document.getElementById("allow-" + id);
 			let allowchecked = allowid.checked;
