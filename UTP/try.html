@@ -22,13 +22,13 @@
 	<input type="checkbox" value="allow-modals" id="allow-modals" checked>
 	<label for="allow-modals">Allow JavaScript Alerts, Confirmations and Prompts (sandbox-allow-modals)</label>
 	    <br>
-	<input type="checkbox" value="allow-popups" id="allow-popups" onclick="if (this.checked == true) {if (confirm('WARNING: Allowing popups while using BuBu Untrackable Pages is heavily discouraged as popups will open in a new window and may be added to your browsing history. BuBu Untrackable Pages will not be responsible for any possible damages caused with this property enabled. Continue this action?') == true) {return true} else {this.checked = false;}}">
-	<label for="allow-popups">Allow Popups (Heavily Discouraged) (sandbox-allow-popups)</label>
+	<input type="checkbox" value="allow-popups" id="allow-popups" onclick="if (this.checked == true) {if (confirm('WARNING: Allowing popups while using BuBu Untrackable Pages is highly discouraged as popups will open in a new window and may be added to your browsing history. BuBu Untrackable Pages will not be responsible for any possible damages caused with this property enabled. Continue this action?') == true) {return true} else {this.checked = false;}}">
+	<label for="allow-popups">Allow Popups (Highly Discouraged) (sandbox-allow-popups)</label>
 	    <br>
 	<input type="checkbox" value="allow-pointer-lock" id="allow-pointer-lock" checked>
 	<label for="allow-pointer-lock">Allow Pointer Lock API (sandbox-allow-pointer-lock)</label>
 	    <br>
-	<input type="checkbox" value="allow-scripts" id="allow-scripts" checked>
+	<input type="checkbox" value="allow-scripts" id="allow-scripts" checked onclick="if (this.checked == false) {if (confirm('WARNING: Disallowing scripts will disable JavaScript, PHP, Java, C and all other scripts which will cause most sites to be unable to function or be displayed as intended. Continue this action?') == true) {return true} else {this.checked = true;}}">
 	<label for="allow-scripts">Allow Scripts (sandbox-allow-scripts)</label>
 	    <br>
 	<input type="checkbox" value="allow-same-origin" id="allow-same-origin" checked>
@@ -36,7 +36,7 @@
 	    <br>
 	    <br>
 	    <br>
-		<button onclick="alert(createLink());" type="button" class="btn btn-light" value="Submit">Submit</button>
+		<button onclick="alert(createLink());this.disabled=true;" type="button" class="btn btn-light" value="Submit">Submit</button>
 		
 		<button type="reset" value="Reset" class="btn btn-danger" onclick="if (confirm('Are you sure you want to reset this form?')) {location.reload();} else {return false;}">Reset</button><a href="javascript:alert(document.getElementById('stateProv').value);" accesskey="l"></a>
 
