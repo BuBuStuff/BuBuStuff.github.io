@@ -60,7 +60,7 @@
 
 		function createLink() {
 			var recLink = linkstart + getid('forms') + getid('modals') + getid('popups') + getid('pointer-lock') + getid('scripts') + getid('same-origin') + linkend;
-			var finalLink = recLink.replace(/  +/g, ' ');
+			var finalLink = recLink.replace(/  +/g, ' ').substring(0, str.length - 1);
 			return finalLink;
 		}
 	
