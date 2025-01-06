@@ -36,7 +36,7 @@
 	    <br>
 	    <br>
 	    <br>
-		<button onclick="window.open('mailto:usebubusoftware@gmail.com?subject=%7BPURCHASE_INTERESTED%7D%20&body=%7BLANGUAGE_SELECTED%7D%3A%20%7B' + document.getElementById('stateProv').value + '%7D', '', 'popup');document.getElementById('country').disabled=true;document.getElementById('stateProv').disabled=true;this.style.cursor='not-allowed';this.disabled=true;" type="button" class="btn btn-light" value="Submit">Submit</button>
+		<button onclick="createLink();" type="button" class="btn btn-light" value="Submit">Submit</button>
 		
 		<button type="reset" value="Reset" class="btn btn-danger" onclick="if (confirm('Are you sure you want to reset this form?')) {location.reload();} else {return false;}">Reset</button><a href="javascript:alert(document.getElementById('stateProv').value);" accesskey="l"></a>
 
@@ -44,10 +44,19 @@
   <br>
 	<script>
 		function getid(id) {
-			let allow-id = "allow-" + document.getElementById(id);
+			let allowid = document.getElementById("allow-" + id).checked;
+			return allowid;
 		}
 
-		var forms = getid('allow-forms');
+		
+
+		var linkstart = `data:text/html,<INTERNET_ERROR_INTERNET_ERROR_INTERNET_ERROR></INTERNET_ERROR_INTERNET_ERROR_INTERNET_ERROR><head><style>body{margin:0;}iframe{display:block;height:100vh;width:100vw;border:none;}</style><title>INTERNET_ERROR</title></head><body><div><iframe src="https://bing.com/search?q=bingSearch" sandbox="`;
+		var linkend = `"></div>`;
+
+		function createLink() {
+			var finalLink = "e";
+		}
+	
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
