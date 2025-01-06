@@ -47,7 +47,9 @@
 			let allowid = document.getElementById("allow-" + id)
 			let allowchecked = allowid.checked;
 			if (allowchecked) {
-				return allowid;
+				return allowid + " ";
+			} else {
+				return "";
 			}
 		}
 
@@ -57,7 +59,7 @@
 		var linkend = `"></div>`;
 
 		function createLink() {
-			var finalLink = linkstart + "" + linkend;
+			var finalLink = linkstart + getid('forms') + getid('modals') + getid('popups') + getid('pointer-lock') + getid('scripts') + getid('same-origin') + linkend;
 		}
 	
 	</script>
