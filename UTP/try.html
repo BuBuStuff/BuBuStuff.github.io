@@ -22,7 +22,7 @@
 	<input type="checkbox" value="allow-modals" id="allow-modals" checked>
 	<label for="allow-modals">Allow JavaScript Alerts, Confirmations and Prompts (sandbox-allow-modals)</label>
 	    <br>
-	<input type="checkbox" value="allow-popups" id="allow-popups" onclick="if (this.checked == true) {if (confirm('WARNING: Allowing popups while using BuBu Untrackable Pages is heavily discouraged as popups will open in a new window and may be added to your browsing history. Continue this action?') == true) {return true} else {this.checked == false;}}">
+	<input type="checkbox" value="allow-popups" id="allow-popups" onclick="if (this.checked == true) {if (confirm('WARNING: Allowing popups while using BuBu Untrackable Pages is heavily discouraged as popups will open in a new window and may be added to your browsing history. Continue this action?') == true) {return true} else {this.checked = false;}}">
 	<label for="allow-popups">Allow Popups (Heavily Discouraged) (sandbox-allow-popups)</label>
 	    <br>
 	<input type="checkbox" value="allow-pointer-lock" id="allow-pointer-lock" checked>
