@@ -59,7 +59,8 @@
 		var linkend = `"></div>`;
 
 		function createLink() {
-			var finalLink = linkstart + getid('forms') + getid('modals') + getid('popups') + getid('pointer-lock') + getid('scripts') + getid('same-origin') + linkend;
+			var recLink = linkstart + getid('forms') + getid('modals') + getid('popups') + getid('pointer-lock') + getid('scripts') + getid('same-origin') + linkend;
+			var finalLink = recLink.replace(/  +/g, ' ');
 			return finalLink;
 		}
 	
