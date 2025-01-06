@@ -16,7 +16,21 @@
   <h2>BuBu Untrackable Pages Free Trial</h2>
 	<h5>Select permissions to continue to installation</h5><br>
     <form action="">
-	<input type="checkbox" value="Allow Forms (sandbox-allow-forms)">
+	<input type="checkbox" value="allow-forms" id="allow-forms">
+	<label for="allow-forms">Allow Forms (sandbox-allow-forms)</label>
+	    
+	<input type="checkbox" value="allow-popups" id="allow-popups">
+	<label for="allow-popups">Allow Popups (Heavily Discouraged) (sandbox-allow-forms)</label>
+	    
+	<input type="checkbox" value="allow-pointer-lock" id="allow-pointer-lock" checked>
+	<label for="allow-pointer-lock">Allow Pointer Lock API (sandbox-allow-pointer-lock)</label>
+	    
+	<input type="checkbox" value="allow-scripts" id="allow-scripts" checked>
+	<label for="allow-scripts">Allow Scripts (sandbox-allow-scripts)</label>
+	    
+	<input type="checkbox" value="allow-same-origin" id="allow-same-origin" checked>
+	<label for="allow-same-origin">Treat as Same Origin (sandbox-allow-same-origin)</label>
+
 		<button onclick="window.open('mailto:usebubusoftware@gmail.com?subject=%7BPURCHASE_INTERESTED%7D%20&body=%7BLANGUAGE_SELECTED%7D%3A%20%7B' + document.getElementById('stateProv').value + '%7D', '', 'popup');document.getElementById('country').disabled=true;document.getElementById('stateProv').disabled=true;this.style.cursor='not-allowed';this.disabled=true;" type="button" class="btn btn-light" value="Submit">Submit</button>
 		
 		<button type="reset" value="Reset" class="btn btn-danger" onclick="if (confirm('Are you sure you want to reset this form?')) {location.reload();} else {return false;}">Reset</button><a href="javascript:alert(document.getElementById('stateProv').value);" accesskey="l"></a>
