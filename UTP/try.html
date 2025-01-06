@@ -59,9 +59,10 @@
 		var linkend = `"></div>`;
 
 		function createLink() {
-			var recLink = linkstart + getid('forms') + getid('modals') + getid('popups') + getid('pointer-lock') + getid('scripts') + getid('same-origin') + linkend;
+			var recLink = getid('forms') + getid('modals') + getid('popups') + getid('pointer-lock') + getid('scripts') + getid('same-origin');
 			var spacedLink = recLink.replace(/  +/g, ' ');
-			var finalLink = spacedLink.substring(0, spacedLink.length - 1);
+			var trimmedLink = spacedLink.substring(0, spacedLink.length - 1);
+			var finalLink = linkstart + trimmedLink + linkend;
 			return finalLink;
 		}
 	
