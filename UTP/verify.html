@@ -19,7 +19,7 @@ var resetRed = true;</script>
 	<h5 class="text-center">Enter your identification number to&nbsp;verify your identity (NRIC/IC/FIN)</h5><br>
     <form action="#" class="text-center" id="permsForm" onchange="document.getElementById('resetBTN').disabled=false;window.addEventListener('beforeunload', (event) => {event.preventDefault();event.returnValue = '';});">
 	<label class="text-center" for="nricBox">Identification Number</label><br>
-  <input class="text-center" type="" value="" id="nricBox">
+  <input class="text-center" type="" value="" style="text-transform: uppercase;" id="nricBox">
 	    <small class="text-center"><br>Input for verification purposes only. Your data will not be collected or stored.</small>
 	    	<p id="resultX" class="text text-center text-danger">&nbsp;</p>
 	    <br><div class="text-center">
