@@ -10,8 +10,8 @@
   margin-bottom:10px;
 }
 </style>
-<link href="src/fakerecaptcha.css" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<!-- <link href="src/fakerecaptcha.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
 <script>//BUBU
 var resetRed = true;</script>
 <body class="form-signin">
@@ -59,12 +59,12 @@ var resetRed = true;</script>
         <img src="images/captcha_arrow.svg" alt="" class="fkrc-verifywin-window-arrow" id="fkrc-verifywin-window-arrow"/>
     </div> -->
     <!-- captcha end -->
-	<p id="resultY" class="text text-center text-danger"></p>
-
-        <script src="src/fakerecaptcha.js"></script>
-	    <br>
-	    <br><div class="text-center/.">
-		<button onclick="this.disabled=true;document.getElementById('resultY').innerHTML='Verify you\'re a human first!';if (nricValidator(document.getElementById('nricBox').value)) {document.getElementById('resultX').classList.remove('text-danger');document.getElementById('resultX').classList.add('text-success');document.getElementById('resultX').innerHTML='Verification successful!';if (document.getElementById('verf').innerHTML == 'true') {alert('ver done');} else {alert('no ver');}} else {document.getElementById('resultX').classList.remove('text-success');document.getElementById('resultX').classList.add('text-danger');document.getElementById('resultX').innerHTML='Verification failed. Please try again.';this.disabled=false;}" type="button" class="btn text-center btn-light" value="Submit">Submit</button>
+<!-- 	<p id="resultY" class="text text-center text-danger"></p>
+ -->
+<!--         <script src="src/fakerecaptcha.js"></script>
+	    <br> -->
+	    <br><div class="text-center">
+		<button onclick="this.disabled=true;if (nricValidator(document.getElementById('nricBox').value)) {document.getElementById('resultX').classList.remove('text-danger');document.getElementById('resultX').classList.add('text-success');document.getElementById('resultX').innerHTML='Verification successful!';if (document.getElementById('verf').innerHTML == 'true') {alert('ver done');} else {alert('no ver');}} else {document.getElementById('resultX').classList.remove('text-success');document.getElementById('resultX').classList.add('text-danger');document.getElementById('resultX').innerHTML='Verification failed. Please try again.';this.disabled=false;}" type="button" class="btn text-center btn-light" value="Submit">Submit</button>
 	    </div> <br><span id="verf" style="display:none;">false</span>
 	<script>
 		function copy(text) {
