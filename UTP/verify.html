@@ -22,7 +22,7 @@ var resetRed = true;</script>
 	<label for="nricBox">Enter your identification number (NRIC/IC/FIN)</label>
 	    <br>
 	    <br>
-		<button onclick="this.disabled=true;alert(nricValidator());" type="button" class="btn btn-light" value="Submit">Submit</button>
+		<button onclick="this.disabled=true;alert(nricValidator(document.getElementById('nricBox').value));" type="button" class="btn btn-light" value="Submit">Submit</button>
 		
 		<button disabled type="reset" value="Reset" id="resetBTN" class="btn btn-danger" onclick="if (resetRed == true) {if (confirm('Are you sure you want to reset this form?')) {location.reload();} else {return false;}} else {location.reload();}">Reset</button>
 
