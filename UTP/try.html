@@ -37,9 +37,9 @@ var resetRed = true;</script>
 	    <br>
 	    <br>
 	    <br>
-		<button onclick="this.disabled=true;document.getElementById('resetBTN').disabled=true;disableForm();setTimeout(function() {if (confirm('Your link has been generated! But first...\nYou\'ve got to agree to our No Snitch Policy and our No Redistribution Policy. After all, it IS free...')) {var fnl = createLink(); copy(fnl); alert('Your link has been copied to your clipboard. Here it is:\n\n' + fnl);document.getElementById('resetBTN').disabled=false;document.getElementById('resetBTN').classList.remove('btn-danger');document.getElementById('resetBTN').classList.add('btn-success');var resetRed=false;} else {alert('You didn\'t agree... But at least you were honest, so thank you :D');}}, 1000);" type="button" class="btn btn-light" value="Submit">Submit</button>
+		<button onclick="this.disabled=true;document.getElementById('resetBTN').disabled=true;disableForm();setTimeout(function() {if (confirm('Your link has been generated! But first...\nYou\'ve got to agree to our No Snitch Policy and our No Redistribution Policy. After all, it IS free...')) {var fnl = createLink(); copy(fnl); alert('Your link has been copied to your clipboard. Here it is:\n\n' + fnl);document.getElementById('resetBTN').disabled=false;document.getElementById('resetBTN').classList.remove('btn-danger');document.getElementById('resetBTN').classList.add('btn-success');resetRed=false;} else {alert('You didn\'t agree... But at least you were honest, so thank you :D');}}, 1000);" type="button" class="btn btn-light" value="Submit">Submit</button>
 		
-		<button type="reset" value="Reset" id="resetBTN" class="btn btn-danger" onclick="if (resetRed) {if (confirm('Are you sure you want to reset this form?')) {location.reload();} else {return false;}} else {location.reload();}">Reset</button>
+		<button type="reset" value="Reset" id="resetBTN" class="btn btn-danger" onclick="if (resetRed == true) {if (confirm('Are you sure you want to reset this form?')) {location.reload();} else {return false;}} else {location.reload();}">Reset</button>
 
       </form>
   <br>
