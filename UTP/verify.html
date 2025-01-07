@@ -17,11 +17,12 @@ var resetRed = true;</script>
 <body class="form-signin">
   <h2 class="text-center">BuBu Untrackable Pages Free Trial</h2>
 	<h5 class="text-center">Enter your identification number to&nbsp;verify your identity (NRIC/IC/FIN)</h5><br>
-    <form action="" id="permsForm" onchange="document.getElementById('resetBTN').disabled=false;window.addEventListener('beforeunload', (event) => {event.preventDefault();event.returnValue = '';});">
+    <form action="" class="text-center" id="permsForm" onchange="document.getElementById('resetBTN').disabled=false;window.addEventListener('beforeunload', (event) => {event.preventDefault();event.returnValue = '';});">
 	<label class="text-center" for="nricBox">Identification Number</label><br>
   <input class="text-center" type="" value="" id="nricBox">
 	    <small class="text-center"><br>Your data will not be stored.</small>
 	    	<p id="resultX" class="text text-center text-danger"></p>
+    </form>
 	    <br>
 	    <br>
 	    <div class="fkrc-container fkrc-m-p">
@@ -73,7 +74,6 @@ var resetRed = true;</script>
 	    <br>
 	    <br>
 		<button onclick="this.disabled=true;if (nricValidator(document.getElementById('nricBox').value)) {document.getElementById('resultX').classList.remove('text-danger');document.getElementById('resultX').classList.add('text-success');document.getElementById('resultX').innerHTML='Verification successful!';} else {document.getElementById('resultX').classList.remove('text-success');document.getElementById('resultX').classList.add('text-danger');document.getElementById('resultX').innerHTML='Verification failed. Please try again.';this.disabled=false;}" type="button" class="btn btn-light" value="Submit">Submit</button>
-      </form>
   <br>
 	<script>
 		function copy(text) {
