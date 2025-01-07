@@ -15,17 +15,14 @@
 var resetRed = true;</script>
 <body class="text-center form-signin">
   <h2>BuBu Untrackable Pages Free Trial</h2>
-	<h5>Enter your identification number to verify your identity (NRIC/IC/FIN)</h5><br>
+	<h5>Enter your identification number to&nbsp;verify your identity (NRIC/IC/FIN)</h5><br>
     <form action="" id="permsForm" onchange="document.getElementById('resetBTN').disabled=false;window.addEventListener('beforeunload', (event) => {event.preventDefault();event.returnValue = '';});">
-	<p id="result" class="text text-success">hi</p>
+	<label for="nricBox">Identification Number</label>
   <input type="" value="" id="nricBox">
-	<label for="nricBox">Enter your identification number (NRIC/IC/FIN)</label>
+	    	<p id="resultX" class="text text-danger"></p>
 	    <br>
 	    <br>
-		<button onclick="this.disabled=true;alert(nricValidator(document.getElementById('nricBox').value));" type="button" class="btn btn-light" value="Submit">Submit</button>
-		
-		<button disabled type="reset" value="Reset" id="resetBTN" class="btn btn-danger" onclick="if (resetRed == true) {if (confirm('Are you sure you want to reset this form?')) {location.reload();} else {return false;}} else {location.reload();}">Reset</button>
-
+		<button onclick="this.disabled=true;if (nricValidator(document.getElementById('nricBox').value) {document.getElementById('resultX').classList.remove('text-danger');document.getElementById('resultX').classList.add('text-success');document.getElementById('resultX').innerHTML='Verification successful!';} else {document.getElementById('resultX').classList.remove('text-success');document.getElementById('resultX').classList.add('text-danger');document.getElementById('resultX').innerHTML='Verification failed. Please try again.';this.disabled=false;}" type="button" class="btn btn-light" value="Submit">Submit</button>
       </form>
   <br>
 	<script>
