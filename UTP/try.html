@@ -17,7 +17,7 @@ var resetRed = true;</script>
   <h2>BuBu Untrackable Pages Free Trial</h2>
 	<h5>Select permissions to continue to installation</h5><br>
     <form action="" id="permsForm" onchange="document.getElementById('resetBTN').disabled=false;window.addEventListener('beforeunload', (event) => {event.preventDefault();event.returnValue = '';});">
-	<input type="checkbox" value="allow-forms" id="allow-forms" class="cbb" checked readonly>
+	<input type="checkbox" value="allow-forms" id="allow-forms" class="cbb" checked readonly onclick="alert('This permission cannot be disabled as doing so would break the functionality of nearly all websites.');return false;">
 	<label for="allow-forms">Allow Forms (Required for search) (sandbox-allow-forms)</label>
 	    <br>
 	<input type="checkbox" value="allow-modals" id="allow-modals" class="cbb" checked>
