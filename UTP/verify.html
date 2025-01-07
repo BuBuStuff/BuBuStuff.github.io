@@ -61,9 +61,9 @@ var resetRed = true;</script>
     <!-- captcha end -->
         <script src="src/fakerecaptcha.js"></script>
 	    <br>
-	    <br>
+	    <br><div class="text-center/.">
 		<button onclick="this.disabled=true;if (nricValidator(document.getElementById('nricBox').value)) {document.getElementById('resultX').classList.remove('text-danger');document.getElementById('resultX').classList.add('text-success');document.getElementById('resultX').innerHTML='Verification successful!';} else {document.getElementById('resultX').classList.remove('text-success');document.getElementById('resultX').classList.add('text-danger');document.getElementById('resultX').innerHTML='Verification failed. Please try again.';this.disabled=false;}" type="button" class="btn text-center btn-light" value="Submit">Submit</button>
-  <br>
+	    </div> <br>
 	<script>
 		function copy(text) {
   		const textarea = document.createElement('textarea');
