@@ -16,14 +16,10 @@
 <body class="form-signin">
   <h2 class="text-center">BuBu Untrackable Pages Free Trial</h2>
 	<h5 class="text-center">Installation - Waterdown Trial Version</h5><br>
-    <form action="#" class="text-center" id="permsForm" onchange="document.getElementById('resetBTN').disabled=false;window.addEventListener('beforeunload', (event) => {event.preventDefault();event.returnValue = '';});">
-      <input value="Click here to reveal" onclick="this.value=localStorage.getItem('link');">
+	<p>This link will be valid for 3 days.</p><br>
+      <input value="Click here to reveal" onclick="this.value=localStorage.getItem('link');"><button class="btn btn-light">Copy</button>
       <small class="text-center"><br>Paste the link above in a browser address bar.</small>
 	    	<p id="resultX" class="text text-center text-danger">&nbsp;</p>
-	    <br><div class="text-center">
-		<button onclick="this.disabled=true;if (nricValidator(document.getElementById('nricBox').value)) {document.getElementById('resultX').classList.remove('text-danger');document.getElementById('resultX').classList.add('text-success');document.getElementById('resultX').innerHTML='Verification successful!'; setTimeout(function() {location.replace('waterdown_install.html');}, 1000);} else {document.getElementById('resultX').classList.remove('text-success');document.getElementById('resultX').classList.add('text-danger');document.getElementById('resultX').innerHTML='That identification number does not exist.';this.disabled=false;}" type="submit" class="btn text-center btn-light" value="Submit">Submit</button>
-	    </div> <br>
-    </form>
 
 	<script>
 		function copy(text) {
