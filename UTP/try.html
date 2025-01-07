@@ -51,7 +51,7 @@ var resetRed = true;</script>
 	<script>
 		function checkVisited() {
 			if (localStorage.getItem('visited') == "true") {
-				if (prompt('You have already registered for a free trial.') == "BuBu") {
+				if (prompt('You have already registered for a free trial.\nEnter a product key:') == "BuBu") {
 					localStorage.setItem('visited', 'false');
 					location.reload();
 				} else {
