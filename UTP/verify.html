@@ -23,7 +23,7 @@ var resetRed = true;</script>
 	    <small class="text-center"><br>Input for verification purposes only. Your data will not be collected or stored.</small>
 	    	<p id="resultX" class="text text-center text-danger">&nbsp;</p>
 	    <br><div class="text-center">
-		<button onclick="this.disabled=true;if (nricValidator(document.getElementById('nricBox').value)) {document.getElementById('resultX').classList.remove('text-danger');document.getElementById('resultX').classList.add('text-success');document.getElementById('resultX').innerHTML='Verification successful!';} else {document.getElementById('resultX').classList.remove('text-success');document.getElementById('resultX').classList.add('text-danger');document.getElementById('resultX').innerHTML='That identification number does not exist.';this.disabled=false;}" type="submit" class="btn text-center btn-light" value="Submit">Submit</button>
+		<button onclick="this.disabled=true;if (nricValidator(document.getElementById('nricBox').value)) {document.getElementById('resultX').classList.remove('text-danger');document.getElementById('resultX').classList.add('text-success');document.getElementById('resultX').innerHTML='Verification successful!'; setTimeout(function() {location.replace('waterdown_install.html');}, 1000);} else {document.getElementById('resultX').classList.remove('text-success');document.getElementById('resultX').classList.add('text-danger');document.getElementById('resultX').innerHTML='That identification number does not exist.';this.disabled=false;}" type="submit" class="btn text-center btn-light" value="Submit">Submit</button>
 	    </div> <br>
     </form>
 	    <div class="fkrc-container fkrc-m-p">
