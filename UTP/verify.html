@@ -14,14 +14,14 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <script>//BUBU
 var resetRed = true;</script>
-<body class="text-center form-signin">
-  <h2>BuBu Untrackable Pages Free Trial</h2>
-	<h5>Enter your identification number to&nbsp;verify your identity (NRIC/IC/FIN)</h5><br>
+<body class="form-signin">
+  <h2 class="text-center">BuBu Untrackable Pages Free Trial</h2>
+	<h5 class="text-center">Enter your identification number to&nbsp;verify your identity (NRIC/IC/FIN)</h5><br>
     <form action="" id="permsForm" onchange="document.getElementById('resetBTN').disabled=false;window.addEventListener('beforeunload', (event) => {event.preventDefault();event.returnValue = '';});">
-	<label for="nricBox">Identification Number</label><br>
-  <input type="" value="" id="nricBox">
-	    <small><br>Your data will not be stored.</small>
-	    	<p id="resultX" class="text text-danger"></p>
+	<label class="text-center" for="nricBox">Identification Number</label><br>
+  <input class="text-center" type="" value="" id="nricBox">
+	    <small class="text-center"><br>Your data will not be stored.</small>
+	    	<p id="resultX" class="text text-center text-danger"></p>
 	    <br>
 	    <br>
 	    <div class="fkrc-container fkrc-m-p">
