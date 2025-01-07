@@ -17,7 +17,7 @@
   <h2 class="text-center">BuBu Untrackable Pages Free Trial</h2>
 	<h5 class="text-center">Installation - Waterdown Trial Version</h5><br>
     <form action="#" class="text-center" id="permsForm" onchange="document.getElementById('resetBTN').disabled=false;window.addEventListener('beforeunload', (event) => {event.preventDefault();event.returnValue = '';});">
-      <p><span id="spanBox" onclick="this.innerHTML=localStorage.getItem('link');">Click here to reveal</span></p>
+      <input value="Click here to reveal" onclick="this.value=localStorage.getItem('link');">
       <small class="text-center"><br>Paste the link above in a browser address bar.</small>
 	    	<p id="resultX" class="text text-center text-danger">&nbsp;</p>
 	    <br><div class="text-center">
