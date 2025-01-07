@@ -45,7 +45,7 @@ function runClickedCheckboxEffects() {
         showCaptchaLoading();
     },500)
     setTimeout(function(){
-        showVerifyWindow();
+        // showVerifyWindow();
     },900)
 }
 
