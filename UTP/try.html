@@ -57,6 +57,8 @@ var resetRed = true;</script>
 				} else {
 					document.getElementById('resetBTN').disabled = true;
 					document.getElementById('sbmt').disabled = true;
+					document.getElementById('resetBTN').title = "You have already registered for a free trial.";
+					document.getElementById('sbmt').title = "You have already registered for a free trial.";
 					disableForm();
 					document.getElementById('subtext').classList.add('text-danger');
 					document.getElementById('subtext').innerHTML = "You have already registered for a free trial.";
