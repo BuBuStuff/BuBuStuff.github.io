@@ -1,10 +1,8 @@
 
 // Function triggered when client clicks [Verify]
 function verifyCaptcha() {
-
-    alert("Verified!");
     closeVerifyWindow();
-
+    document.getElementById('verf').innerHTML = "true";
 }
 
 
