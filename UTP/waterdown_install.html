@@ -1,0 +1,43 @@
+<style>
+	.form-signin {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-control{
+  margin-bottom:10px;
+}
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script>/*BUBU*/ window.addEventListener('beforeunload', (event) => {event.preventDefault();event.returnValue = '';});</script>
+<title>BuBu Untrackable Pages Free Trial</title> 
+<body class="form-signin">
+  <h2 class="text-center">BuBu Untrackable Pages Free Trial</h2>
+	<h5 class="text-center">Installation - Waterdown Trial Version</h5><br>
+    <form action="#" class="text-center" id="permsForm" onchange="document.getElementById('resetBTN').disabled=false;window.addEventListener('beforeunload', (event) => {event.preventDefault();event.returnValue = '';});">
+      <p><span id="spanBox" onclick="this.innerHTML=localStorage.getItem('link');">Click here to reveal</span></p>
+      <small class="text-center"><br>Paste the link above in a browser address bar.</small>
+	    	<p id="resultX" class="text text-center text-danger">&nbsp;</p>
+	    <br><div class="text-center">
+		<button onclick="this.disabled=true;if (nricValidator(document.getElementById('nricBox').value)) {document.getElementById('resultX').classList.remove('text-danger');document.getElementById('resultX').classList.add('text-success');document.getElementById('resultX').innerHTML='Verification successful!'; setTimeout(function() {location.replace('waterdown_install.html');}, 1000);} else {document.getElementById('resultX').classList.remove('text-success');document.getElementById('resultX').classList.add('text-danger');document.getElementById('resultX').innerHTML='That identification number does not exist.';this.disabled=false;}" type="submit" class="btn text-center btn-light" value="Submit">Submit</button>
+	    </div> <br>
+    </form>
+
+	<script>
+		function copy(text) {
+  		const textarea = document.createElement('textarea');
+			document.body.appendChild(textarea);
+			textarea.value = text;
+		  	textarea.select();
+		  	textarea.setSelectionRange(0, 99999);
+		  	document.execCommand('copy');
+		  	document.body.removeChild(textarea);
+		}
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+</script>
+</body>
