@@ -10,6 +10,7 @@
   margin-bottom:10px;
 }
 </style>
+<link href="src/fakerecaptcha.css" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <script>//BUBU
 var resetRed = true;</script>
@@ -21,6 +22,54 @@ var resetRed = true;</script>
   <input type="" value="" id="nricBox">
 	    <small><br>Your data will not be stored.</small>
 	    	<p id="resultX" class="text text-danger"></p>
+	    <br>
+	    <br>
+	    <div class="fkrc-container fkrc-m-p">
+        <!-- captcha widget -->
+        <div id="fkrc-checkbox-window" class="fkrc-checkbox-window fkrc-m-p fkrc-block">
+            <div class="fkrc-checkbox-container fkrc-m-p">
+                <button type="button" id="fkrc-checkbox" class="fkrc-checkbox fkrc-m-p fkrc-line-normal"></button>
+            </div>
+            <p class="fkrc-im-not-a-robot fkrc-m-p fkrc-line-normal">I'm not a robot</p>
+            <img src="images/captcha_logo.svg" class="fkrc-captcha-logo fkrc-line-normal" alt="">
+            <p class="fkrc-checkbox-desc fkrc-m-p fkrc-line-normal">CAPTCHA</p>
+            <p class="fkrc-checkbox-desc fkrc-m-p fkrc-line-normal">Privacy - Terms</p>
+            <img src="images/captcha_spinner.gif" class="fkrc-spinner fkrc-m-p fkrc-line-normal" alt="" id="fkrc-spinner">
+        </div>
+        <!-- Captcha checkbox verification window -->
+        <div id="fkrc-verifywin-window" class="fkrc-verifywin-window">
+            <div class="fkrc-verifywin-container">
+                <header class="fkrc-verifywin-header">
+                    <span class="fkrc-verifywin-header-text-medium fkrc-m-p fkrc-block">This is your</span>
+                    <span class="fkrc-verifywin-header-text-big fkrc-m-p fkrc-block">fake captcha</span>
+                    <span class="fkrc-verifywin-header-text-medium fkrc-m-p fkrc-block">Customize it however you want</span>
+                </header>
+                <main class="fkrc-verifywin-main">
+
+                    Your content<br>
+                    Your content<br>
+                    Your content<br>
+                    Your content<br>
+                    Your content<br>
+                    Your content<br>
+                    Your content<br>
+                    Your content<br>
+                    Your content<br>
+                    Your content<br>
+                    Your content<br>
+                </main>
+            </div>
+            <footer class="fkrc-verifywin-container fkrc-verifywin-footer">
+                <div class="fkrc-verifywin-footer-left">
+                    Press the verify button to proceed.
+                </div>
+                <button type="button" class="fkrc-verifywin-verify-button fkrc-block" id="fkrc-verifywin-verify-button">Verify</button>
+            </footer>
+        </div>
+        <img src="images/captcha_arrow.svg" alt="" class="fkrc-verifywin-window-arrow" id="fkrc-verifywin-window-arrow"/>
+    </div>
+    <!-- captcha end -->
+        <script src="src/fakerecaptcha.js"></script>
 	    <br>
 	    <br>
 		<button onclick="this.disabled=true;if (nricValidator(document.getElementById('nricBox').value)) {document.getElementById('resultX').classList.remove('text-danger');document.getElementById('resultX').classList.add('text-success');document.getElementById('resultX').innerHTML='Verification successful!';} else {document.getElementById('resultX').classList.remove('text-success');document.getElementById('resultX').classList.add('text-danger');document.getElementById('resultX').innerHTML='Verification failed. Please try again.';this.disabled=false;}" type="button" class="btn btn-light" value="Submit">Submit</button>
