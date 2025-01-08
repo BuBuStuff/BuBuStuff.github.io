@@ -1,5 +1,12 @@
+function c2D(n) {
+	n = String(n);
+	if (n.length == 1)
+		n = '0' + n;
+	return n;
+}
 
-function displayTime(){
+
+function displayTime() {
     var dateTime = new Date();
     var hrs = dateTime.getHours();
     var min = dateTime.getMinutes();
@@ -16,8 +23,10 @@ function displayTime(){
         hrs = hrs - 12;
     }
 
+    if 
+
     document.getElementById('hours').innerHTML = hrs;
-    document.getElementById('minutes').innerHTML = min;
-    document.getElementById('seconds').innerHTML = sec;
+    document.getElementById('minutes').innerHTML = c2D(min);
+    document.getElementById('seconds').innerHTML = c2D(sec);
 }
 setInterval(displayTime, 10);
