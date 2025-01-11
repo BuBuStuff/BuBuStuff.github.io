@@ -176,7 +176,8 @@ var quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	"Some teachers are philosophical and shit and say stuff like \"life is precious don't waste it\", but they get angry when you walk out their classroom because school is a waste of time.",
 	"Wait for someone to ask you something and give you a scale of 1-10, ask is 6 or 7 high, they say yes, so now i have verbal confirmation scoring 65% in a test is high.",
 	"Time you enjoy wasting isn't time wasted.",
-	"The axe forgets but the tree remembers."
+	"The axe forgets but the tree remembers.",
+	"Slow is smooth, smooth is fast"
 	];
 
 	console.log("Console active");
