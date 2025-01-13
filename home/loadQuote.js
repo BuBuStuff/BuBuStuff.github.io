@@ -177,7 +177,8 @@ var quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	"Wait for someone to ask you something and give you a scale of 1-10, ask is 6 or 7 high, they say yes, so now i have verbal confirmation scoring 65% in a test is high.",
 	"Time you enjoy wasting isn't time wasted.",
 	"The axe forgets but the tree remembers.",
-	"Slow is smooth, smooth is fast"
+	"Slow is smooth, smooth is fast",
+	"When a blind man finally sees, the first thing he casts away is the stick that carried him through the dark."
 	];
 
 	console.log("Console active");
