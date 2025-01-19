@@ -1,0 +1,10 @@
+<img src id="adImgTag">
+<script>
+  var params = (new URL(document.location)).searchParams;
+  var adImg = params.get("img") + ".png";
+
+  function setImg() {
+    var imgDOM = document.getElementById("adImgTag");
+    imgDOM.src = "ads/" + adImg;
+  }
+</script>
