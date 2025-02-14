@@ -178,7 +178,8 @@ var quotes = ["Item at index 0 is not in use.", "War does not determine who is r
 	"Time you enjoy wasting isn't time wasted.",
 	"The axe forgets but the tree remembers.",
 	"Slow is smooth, smooth is fast",
-	"When a blind man finally sees, the first thing he casts away is the stick that carried him through the dark."
+	"When a blind man finally sees, the first thing he casts away is the stick that carried him through the dark.",
+	"Don\'t look at the clock; do what it does, keep going."
 	];
 
 	console.log("Console active");
