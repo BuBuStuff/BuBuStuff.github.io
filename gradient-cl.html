@@ -47,9 +47,20 @@
     </style>
 </head>
 <body>
-    <div class="time" id="time"></div>
+    <div class="time" id="time" ondblclick="enterFullScreen();"></div>
 
     <script>
+    function enterFullScreen() {
+            if (document.requestFullscreen) {
+                document.requestFullscreen();
+            } else if (document.mozRequestFullScreen) {
+                document.mozRequestFullScreen();
+            } else if (document.webkitRequestFullscreen) {
+                document.webkitRequestFullscreen(); 
+            } else if (document.msRequestFullscreen) {
+                document.msRequestFullscreen();
+            }
+        }
         function updateTimeAndBackground() {
             const now = new Date();
             const hours = now.getHours();
