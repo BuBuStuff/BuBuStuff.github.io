@@ -1,0 +1,97 @@
+<html>
+<head>
+    <style>
+        @font-face {
+            font-family: 'SF Pro Soft';
+            src: url('https://github.com/ayaangrover/solar_clock/raw/refs/heads/main/public/fonts/recreated/SF%20Pro%20-%20Semibold%20Soft.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'SF Pro Rails';
+            src: url('https://github.com/ayaangrover/solar_clock/raw/refs/heads/main/public/fonts/recreated/SF%20Pro%20-%20Semibold%20Rails.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'SF Pro Stencil';
+            src: url('https://github.com/ayaangrover/solar_clock/raw/refs/heads/main/public/fonts/recreated/SF%20Pro%20-%20Semibold%20Stencil.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'SF Pro Rounded';
+            src: url('https://github.com/ayaangrover/solar_clock/raw/refs/heads/main/public/fonts/recreated/SF%20Pro%20-%20Semibold%20Rounded.otf') format('opentype');
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #000000;
+            transition: background 2s;
+            overflow: hidden;
+        }
+
+        .time {
+            font-size: 80vw; /* Makes it scale dynamically */
+            max-width: 80vw; /* Ensures it doesn't exceed 80% */
+            color: rgba(255, 255, 255, 0.5);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-stretch: expanded;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap; /* Prevents line break */
+            overflow: hidden; /* Prevents overflow */
+        }
+    </style>
+</head>
+<body>
+    <div class="time" id="time"></div>
+
+    <script>
+        function enterFullScreen(element) {
+            if (element.requestFullscreen) {
+                element.requestFullscreen();
+            } else if (element.mozRequestFullScreen) {
+                element.mozRequestFullScreen();
+            } else if (element.webkitRequestFullscreen) {
+                element.webkitRequestFullscreen(); 
+            } else if (element.msRequestFullscreen) {
+                element.msRequestFullscreen();
+            }
+        }
+
+        function updateTimeAndBackground() {
+            const now = new Date();
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+            const timeString = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+            document.getElementById('time').textContent = timeString;
+    
+            let gradientStart, gradientEnd;
+            if (hours < 6) {
+                gradientStart = '#010A5B';
+                gradientEnd = '#000428';
+            } else if (hours < 12) {
+                gradientStart = '#FF7E5F';
+                gradientEnd = '#8476EA';
+            } else if (hours < 18) {
+                gradientStart = '#00B4DB';
+                gradientEnd = '#0083B0';
+            } else if (hours < 21) {
+                gradientStart = '#FF7E5F';
+                gradientEnd = '#8476EA';
+            } else {
+                gradientStart = '#010A5B';
+                gradientEnd = '#000428';
+            }
+    
+            document.body.style.background = `linear-gradient(to right, ${gradientStart}, ${gradientEnd})`;
+        }
+
+        setInterval(updateTimeAndBackground, 1000);
+    </script>
+</body>
+</html>
