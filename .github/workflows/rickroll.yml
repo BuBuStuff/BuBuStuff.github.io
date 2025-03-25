@@ -1,2 +1,14 @@
-- name: Random RickRoll
-  uses: TejasvOnly/random-rickroll@v1.0
+name: push \"rickroll\" to issue on server
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Rickroll
+        uses: TejasvOnly/random-rickroll@v1.0
+        with:
+          percentage: 100
