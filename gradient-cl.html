@@ -72,18 +72,23 @@
 
             let gradientStart, gradientEnd;
             if (hours < 6 && minutes < 30) {
-                gradientStart = '#010A5B';
+                print("night");
+                gradientStart = '#010A5B'; // night
                 gradientEnd = '#000428';
             } else if (hours < 12) {
-                gradientStart = '#FF7E5F';
+                print("sunrise");
+                gradientStart = '#FF7E5F'; // sunrise
                 gradientEnd = '#8476EA';
             } else if (hours < 16 && minutes < 30) {
-                gradientStart = '#00B4DB';
+                print("day");
+                gradientStart = '#00B4DB'; // day
                 gradientEnd = '#0083B0';
             } else if (hours < 20 && minutes < 30) {
-                gradientStart = '#FF7E5F';
+                print("sunset");
+                gradientStart = '#FF7E5F'; // sunset
                 gradientEnd = '#8476EA';
             } else {
+                print("night or undefined");
                 gradientStart = '#010A5B';
                 gradientEnd = '#000428';
             }
