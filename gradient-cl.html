@@ -69,7 +69,7 @@
             document.getElementById('time').textContent = timeString;
 
             let gradientStart, gradientEnd;
-            if (hours < 6) {
+            if (hours < 6 && minutes < 30) {
                 gradientStart = '#010A5B';
                 gradientEnd = '#000428';
             } else if (hours < 12) {
@@ -78,7 +78,7 @@
             } else if (hours < 16 && minutes < 30) {
                 gradientStart = '#00B4DB';
                 gradientEnd = '#0083B0';
-            } else if (hours < 21) {
+            } else if (hours < 20 && minutes < 30) {
                 gradientStart = '#FF7E5F';
                 gradientEnd = '#8476EA';
             } else {
