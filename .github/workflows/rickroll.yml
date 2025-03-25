@@ -1,4 +1,4 @@
-name: push \"rickroll\" to issue on server
+name: push rickroll on server
 
 on:
   issues:
