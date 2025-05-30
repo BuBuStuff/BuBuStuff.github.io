@@ -48,20 +48,18 @@
         }
     </style>
     <script>
-        function enterFullScreen() {
-            if (document.requestFullscreen) {
-                document.requestFullscreen();
-            } else if (document.mozRequestFullScreen) {
-                document.mozRequestFullScreen();
-            } else if (document.webkitRequestFullscreen) {
-                document.webkitRequestFullscreen(); 
-            } else if (document.msRequestFullscreen) {
-                document.msRequestFullscreen();
-            }
-        }
+        function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
     </script>
 </head>
-<body onclick="enterFullScreen();">
+<body onclick="openFullscreen();">
     <div class="time" id="time"></div>
 
     <script>
