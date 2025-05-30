@@ -50,6 +50,7 @@
     <script>
        elem = document.documentElement;
         function openFullscreen() {
+            console.log('fs triggered');
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.webkitRequestFullscreen) { /* Safari */
@@ -57,10 +58,11 @@
   } else if (elem.msRequestFullscreen) { /* IE11 */
     elem.msRequestFullscreen();
   }
+            console.log('fs function complete');
 }
     </script>
 </head>
-<body onclick="openFullscreen();">
+<body onclick="console.log('body onclick triggered');openFullscreen();">
     <div class="time" id="time"></div>
 
     <script>
